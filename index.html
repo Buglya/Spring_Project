@@ -3,50 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
     <title>Anyagi függetlenség</title>
 </head>
 
-<!-- 
-
-First change: 04.15. 12:36 pppB02: html fejlesztés
-képek keresése: Noe
-Webminta készítés: timót
-
+<!--
+VARIABLE NAMING: <mainParent><function of>
+    example: headerContainer
 -->
 <body>
     <header class="section">
-        <nav>
+        <div class="headerContainer">
             <div>
-                <ul>
-                    <li><a href="">A kurzusról</a></li>
-                    <li><a href="">Kinek ajánljuk</a></li>
-                    <li><a href="">Oktatóink</a></li>
-                    <li><a href="">Képzések</a></li>
-                    <li><a href="">Login</a></li>
-                </ul>
+                <img src="img/" alt="LOGO">
             </div>
-        </nav>
+            <div>
+                <h1>*MÁRKA NEVE*</h1>
+            </div>
+        </div>
     </header>
 
-    <div class="section">
-
-        <main>
-            <div></div>
-        </main>
-    </div>
-
-    <footer class="section">
+    <nav class="section">
         <div>
             <ul>
-                <h3></h3>
-                <li>GYIK</li>
-                <li>Kapcsolat</li>
-                <li>Híreink</li>
-                <li>Rólunk</li>
-                <li></li>
+                <li><a href="">A kurzusról</a></li>
+                <li><a href="">Kinek ajánljuk</a></li>
+                <li><a href="">Oktatóink</a></li>
+                <li><a href="">Képzések</a></li>
+                <li><a id="login" href="">Login</a></li>
             </ul>
+        </div>
+    </nav>
+
+    <main class="section">
+        <div class="mainJoinDiv">
+            <div class="mainImgCover"></div>
+            <div class="mainCoverContainer">
+                <span>Mibe érdemes <label for="join">befektetned</label>?</span>
+                <div>
+                    <h1>ÖNMAGADBA!</h1>
+                    <div><input id="join" type="button" value="Csatlakozom" onclick="alert('hello');"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="section">
+        <div class="main-footer-section">
+            <div class="footer-list-container">
+                <div class="footer-list">
+                    <h3>lorem</h3>
+                    <ul>
+                        <li><a href="">ipsum</a></li>
+                        <li><a href="">ipsum</a></li>
+                        <li><a href="">ipsum</a></li>
+                        <li><a href="">ipsum</a></li>
+                        <li><a href="">ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>lorem</h3>
+                    <ul>
+                        <li><a href="">ipsum</a></li>
+                        <li><a href="">ipsum</a></li>
+                        <li><a href="">ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-list">
+                    <h3>lorem</h3>
+                    <ul>
+                        <li><a href="">ipsum</a></li>
+                        <li><a href="">ipsum</a></li>
+                        <li><a href="">ipsum</a></li>
+                        <li><a href="">ipsum</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="">
+                <div class="footer-button-container">
+                    <div class="footer-icon-container">
+                        <a href=""><img src="img/icons/shopping-bag.svg" alt="logo"></a>
+                        <a href=""><img src="img/icons/instagram.svg" alt="instagram"></a>
+                        <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
+                        <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
+                    </div>
+                    <input type="button" value="Csatlakozom">
+                </div>
+            </div>
+    
+            <div class="footer-section">
+                <div class="footer-links-container">
+                    <a href="">Suppliers</a>
+                    <a href="">Terms and Conditions</a>
+                    <a href="">Privacy</a>
+                    <a href="">Cookies</a>
+                    <a href="">Security</a>
+                    <span>&COPY; 2025 *Brand name* | All rigths reserved.</span>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
 </html>
+
+<!--
+TODO: minden, saját beetűtípus
+https://open.spotify.com/playlist/13mSKGefyqQctAigf2Eejm?si=a6473b1dc9ee4980
+-->
