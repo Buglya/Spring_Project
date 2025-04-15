@@ -4,7 +4,6 @@ Ez a projekt egy iskolai feladat részeként készült, amelynek célja a webfej
 
 ## 📚 Projekt Leírása
 
-[Írd ide röviden, hogy mit csinál a projekt. Például:]
 Ez a weboldal egy elképzelt pénzügyi tanácsadási kurzus bemutatására szolgál. Az oldal struktúrája, dizájnja és tartalma azt illusztrálja, hogyan nézne ki egy ilyen szolgáltatás webes felülete.  
 **Fontos:** az oldal nem tartalmaz működő kurzust, regisztrációs rendszert vagy fizetési lehetőséget – kizárólag egy statikus minta (mockup) céljából készült.
 
