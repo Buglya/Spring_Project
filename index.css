@@ -4,7 +4,7 @@
     --ff: Archivo-Regular;
     --colorprimary: black;
     --colorsecondary: white;
-    --coloraccent: #7342d9;
+    --coloraccent: #13a1c5;
     --coloraccentshade: #7242d948;
     --h1: bold 54px/64px var(--ff);
     --h2: bold 36px/36px var(--ff);
@@ -51,12 +51,17 @@ p {
 
 /* Header */
 
+.headerContainer h1{
+    margin-top: 30px;
+}
+
 .headerContainer {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     gap: 1vw;
+    margin: auto;
 }
 
 /* nav */
@@ -94,7 +99,7 @@ nav li {
 /* Main */
 
 main {
-    margin-bottom: 50vh;
+    margin: 0 100px 50vh 100px
 }
 
 .mainImgCover{
@@ -315,3 +320,52 @@ footer a:hover {
     }
 
 }
+
+.logo {
+    width: 40px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: top;
+  }
+
+  .gridcontainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,500px);
+    gap: 40px;
+    grid-template-rows: repeat(2 100%);
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .gridcard{
+    background-color: var(--coloraccent);
+    border-radius: 15px;
+    border: var(--coloraccent) 2px solid;
+  }
+
+  .gridcard h4{
+    font-size: 2rem;
+    margin: 10px 0px ;
+    text-align: center;
+  }
+
+ .gridcard:nth-child(2n+1) {
+    background-color:#13a1c588;
+ }
+
+ .navbarcontainer{
+    display: flex;
+    justify-content: space-between;
+
+ }
+
+ .navbarelemek{
+    width: 75%;
+    margin: auto;
+
+ }
+ 
