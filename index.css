@@ -49,6 +49,12 @@ p {
     margin-top: 8px;
 }
 
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 350    ;
+    font-style: normal;
+  }
+
 /* Header */
 
 .headerContainer h1{
@@ -200,13 +206,13 @@ footer ul {
 }
 
 footer h3 {
-    font-family: Archivo-Medium;
-    color: var(--colorsecondary);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffffd3;
     font-size: 1rem;
 }
 
 footer a:visited {
-    color: #858585;
+    color: #ffffffd3;
 }
 
 footer a {
@@ -232,6 +238,20 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 5vw;
+    border-top: 2px solid hwb(0 100% 0% / 0.827);
+    padding-top: 20px;
+}
+
+.footer-logo{
+    width: 100%;
+    height: auto;
+}
+
+.footer-logo h2{
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    color: var(--colorsecondary);
 }
 
 .main-footer-section {
@@ -242,7 +262,7 @@ footer a:hover {
 .footer-button-container {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid #666666;
+    border-bottom: 2px solid hwb(0 100% 0% / 0.827);
     padding-bottom: 8px;
     margin: 30px 0px;
 }
