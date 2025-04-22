@@ -330,51 +330,55 @@ footer a:hover {
     background-position: top;
   }
 
-  .gridcontainer{
+.gridcontainer{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,500px);
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(2, 50%);
     gap: 40px;
-    grid-template-rows: repeat(2 100%);
     justify-content: center;
     align-items: center;
+}
 
-  }
-
-  .gridcard{
+.gridcard{
     background-color: var(--coloraccent);
     border-radius: 15px;
     border: var(--coloraccent) 2px solid;
-  }
+    height: 100%;
+}
 
-  .gridcard h4{
+.gridcard h4{
     font-size: 2rem;
     margin: 10px 0px ;
     text-align: center;
-  }
+}
 
- .gridcard:nth-child(2n+1) {
+.gridcard p{
+    margin-bottom: 0;
+    padding: 0 5px;
+}
+
+.gridcard:nth-child(2n+1) {
     background-color:#13a1c588;
- }
+}
 
- .navbarcontainer{
+.navbarcontainer{
     display: flex;
     justify-content: space-between;
 
- }
+}
 
- .navbarelemek{
+.navbarelemek{
     width: 75%;
     margin: auto;
-
- }
+}
  
 
 
  /* GYIK */
 
 
- .faq {
+.faq{
     margin-bottom: 10px;
 }
 .question {
