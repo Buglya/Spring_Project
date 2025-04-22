@@ -118,12 +118,12 @@ main {
 
 .mainJoinDiv {
     position: relative;
-    width: 100%;
-    height: 30vh;
-    background-image: url(img/mainJoinBackground.jpg);
-    background-size: cover;                
+    width: 860px;
+    height: 573px;
+    background-image: url(img/icons/mainJoinBackground.png);
+    background-size: 100% 100%;                
     background-repeat: no-repeat;
-    background-position: center center; 
+    background-position: center center;
 }
 .mainCoverContainer{
     position: relative;
@@ -181,6 +181,16 @@ main {
     transition: .2s;
     background-color: #0000006b;
     scale: 1.05;
+}
+
+.product {
+    text-align: center;
+}
+
+.imgcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer */
