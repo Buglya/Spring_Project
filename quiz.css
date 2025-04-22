@@ -1,0 +1,59 @@
+@import url('fonts/Archivo_Complete/Fonts/WEB/css/archivo.css');
+
+:root {
+    --ff: Archivo-Regular;
+    --colorprimary: black;
+    --colorsecondary: white;
+    --coloraccent: #13a1c5;
+    --coloraccentshade: #7242d948;
+    --h1: bold 54px/64px var(--ff);
+    --h2: bold 36px/36px var(--ff);
+    --h3: bold 24px/30px var(--ff);
+    --links: bold 18px/18px var(--ff);
+    --p: 18px/30px var(--ff);
+    --subtext: 12px/20px var(--ff);
+    --smalltext: bold 20px/26px var(--ff);
+    --transition: 0.3s ease-in-out;
+    --shadow: #00000030 0px 0px 10px 0px;
+    --shadowdark: #00000030 0px 5px 10px
+}
+
+
+.questionContainer{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(10, 20vh);
+    gap: 40px;
+    counter-reset: section;
+}
+
+.question{
+    width: 100%;
+    max-height: 450px;
+    cursor: default;
+}
+
+.question h2::before{
+    counter-increment: section;
+    content:counter(section) ". ";
+}
+
+.radioConatiner{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.radioConatiner label{
+    font: var(--p);
+    font-size: 1.5rem;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.radioConatiner input[type="radio"]{
+    cursor: pointer;
+}
+
+/*11.51*/
