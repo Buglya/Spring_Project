@@ -32,8 +32,8 @@ VARIABLE NAMING: <mainParent><function of>
             <div class="navbarelemek">
                 <ul>
                     <li><a href=""></a></li>
-                    <li><a href="">Kinek ajánljuk</a></li>
-                    <li><a href="">Oktatóink</a></li>
+                    <li><a href="#termekek">Márkáink</a></li>
+                    <li><a href="">Média</a></li>
                     <li><a href="quiz.html">Quiz</a></li>
                     <li><a id="login" href="">Login</a></li>
                 </ul>
@@ -46,107 +46,111 @@ VARIABLE NAMING: <mainParent><function of>
             <div class="mainJoinDiv">
             </div>
         </div>
-        <div class="productContainer mainSection">
-            <h2 class="product">Termékeink</h2>
-            <div class="productLeiras">
-                <div class="productItems"><img src="img/icons/rosewater.png" alt="rosewater" class="water"></div>
-                <div class="productItems">
-                    <h2>AquaVibe szénsavmentes természetes ásványvíz</h2>
-                    <p>Szénsavmentes természetes ásványvíz.</p>
-                    <p>Csecsemőtápszer készítésére alkalmas. Forralás nélkül adható a babáknak. A palackot a felbontás után tartsa száraz, hűvös helyen és 24 óra eltelte után használat előtt forralja fel az ásványvizet.</p>
-                    <div class="dropdown">
-                        <div class="toggle-container" onclick="toggleNutrition(this)">
-                          <span>Tápértékadatok megtekintése</span>
-                          <span class="arrow">&#9650;</span>
+        
+        <div class="productContainerNNN mainSection">
+            <div id="termekek" class="productContainer ">
+                <h2 class="product">Termékeink</h2>
+                <div class="productLeiras">
+                    <div class="productItems"><img src="img/icons/rosewater.png" alt="rosewater" class="water"></div>
+                    <div class="productItems">
+                        <h2>AquaVibe szénsavmentes természetes ásványvíz</h2>
+                        <p>Szénsavmentes természetes ásványvíz.</p>
+                        <p>Csecsemőtápszer készítésére alkalmas. Forralás nélkül adható a babáknak. A palackot a felbontás után tartsa száraz, hűvös helyen és 24 óra eltelte után használat előtt forralja fel az ásványvizet.</p>
+                        <div class="dropdown">
+                            <div class="toggle-container" onclick="toggleNutrition(this)">
+                            <span>Tápértékadatok megtekintése</span>
+                            <span class="spanImgArrow"><img class="arrow" src="img/icons/chevron-up.svg" alt="nyilFel"></span>
+                            </div>
+                        
+                            <div class="nutrition-info">
+                            <p><strong>Kiszerelés:</strong> 1L</p>
+                            <div class="divider"></div>
+                        
+                            <p><strong>Kalcium:</strong> 82mg/L</p>
+                            <p><strong>Magnézium:</strong> 41mg/L</p>
+                            <p><strong>Hidrogén-karbonát:</strong> 327mg/L</p>
+                            <p><strong>Szulfát:</strong> 108mg/L</p>
+                            <p><strong>Nátrium:</strong> 18mg/L</p>
+                        
+                            <p style="margin-top: 10px;">
+                                *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
+                            </p>
+                            <div class="divider"></div>
+                        
+                            <p><strong>Összetevők:</strong></p>
+                            <p>Összes oldott ásványianyagtartalom: 627mg/l</p>
+                            </div>
                         </div>
-                      
-                        <div class="nutrition-info">
-                          <p><strong>Kiszerelés:</strong> 1L</p>
-                          <div class="divider"></div>
-                      
-                          <p><strong>Kalcium:</strong> 82mg/L</p>
-                          <p><strong>Magnézium:</strong> 41mg/L</p>
-                          <p><strong>Hidrogén-karbonát:</strong> 327mg/L</p>
-                          <p><strong>Szulfát:</strong> 108mg/L</p>
-                          <p><strong>Nátrium:</strong> 18mg/L</p>
-                      
-                          <p style="margin-top: 10px;">
-                            *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
-                          </p>
-                          <div class="divider"></div>
-                      
-                          <p><strong>Összetevők:</strong></p>
-                          <p>Összes oldott ásványianyagtartalom: 627mg/l</p>
-                        </div>
-                      </div>
+                    </div>
                 </div>
-            </div>
-            <div class="productLeiras">              
-                <div class="productItems">
-                    <h2>Naturaqua szénsavas természetes ásványvíz</h2>
-                    <p>Szén-dioxiddal dúsított természetes ásványvíz.</p>
-                    <div class="dropdown">
-                        <div class="toggle-container" onclick="toggleNutrition(this)">
-                          <span>Tápértékadatok megtekintése</span>
-                          <span class="arrow">&#9650;</span>
+                <div class="productLeiras">              
+                    <div class="productItems">
+                        <h2>Naturaqua szénsavas természetes ásványvíz</h2>
+                        <p>Szén-dioxiddal dúsított természetes ásványvíz.</p>
+                        <div class="dropdown">
+                            <div class="toggle-container" onclick="toggleNutrition(this)">
+                            <span>Tápértékadatok megtekintése</span>
+                            <span class="spanImgArrow"><img class="arrow" src="img/icons/chevron-up.svg" alt="nyilFel"></span>
+                            </div>
+                        
+                            <div class="nutrition-info">
+                            <p><strong>Kiszerelés:</strong> 500ml</p>
+                            <div class="divider"></div>
+                        
+                            <p><strong>Kalcium:</strong> 50mg/L</p>
+                            <p><strong>Magnézium:</strong> 25mg/L</p>
+                            <p><strong>Hidrogén-karbonát:</strong> 200mg/L</p>
+                            <p><strong>Szulfát:</strong> 70mg/L</p>
+                            <p><strong>Nátrium:</strong> 12mg/L</p>
+                        
+                            <p style="margin-top: 10px;">
+                                *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
+                            </p>
+                            <div class="divider"></div>
+                        
+                            <p><strong>Összetevők:</strong></p>
+                            <p>Összes oldott ásványianyagtartalom: 400mg/l</p>
+                            </div>
                         </div>
-                      
-                        <div class="nutrition-info">
-                          <p><strong>Kiszerelés:</strong> 500ml</p>
-                          <div class="divider"></div>
-                      
-                          <p><strong>Kalcium:</strong> 50mg/L</p>
-                          <p><strong>Magnézium:</strong> 25mg/L</p>
-                          <p><strong>Hidrogén-karbonát:</strong> 200mg/L</p>
-                          <p><strong>Szulfát:</strong> 70mg/L</p>
-                          <p><strong>Nátrium:</strong> 12mg/L</p>
-                      
-                          <p style="margin-top: 10px;">
-                            *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
-                          </p>
-                          <div class="divider"></div>
-                      
-                          <p><strong>Összetevők:</strong></p>
-                          <p>Összes oldott ásványianyagtartalom: 400mg/l</p>
-                        </div>
-                      </div>
+                    </div>
+                    <div class="productItems"><img src="img/icons/water.png" alt="water" class="water right"></div>
                 </div>
-                <div class="productItems"><img src="img/icons/water.png" alt="water" class="water right"></div>
-            </div>
-            <div class="productLeiras">
-                <div class="productItems"><img src="img/icons/zoldviz.png" alt="zoldviz" class="water"></div>
-                <div class="productItems">
-                    <h2>Naturaqua enyhén szénsavas természetes ásványvíz</h2>
-                    <p>Szén-dioxiddal enyhén dúsított természetes ásványvíz.</p>
-                    <div class="dropdown">
-                        <div class="toggle-container" onclick="toggleNutrition(this)">
-                          <span>Tápértékadatok megtekintése</span>
-                          <span class="arrow">&#9650;</span>
+                <div class="productLeiras">
+                    <div class="productItems"><img src="img/icons/zoldviz.png" alt="zoldviz" class="water"></div>
+                    <div class="productItems">
+                        <h2>Naturaqua enyhén szénsavas természetes ásványvíz</h2>
+                        <p>Szén-dioxiddal enyhén dúsított természetes ásványvíz.</p>
+                        <div class="dropdown">
+                            <div class="toggle-container" onclick="toggleNutrition(this)">
+                            <span>Tápértékadatok megtekintése</span>
+                            <span class="spanImgArrow"><img class="arrow" src="img/icons/chevron-up.svg" alt="nyilFel"></span>
+                            </div>
+                        
+                            <div class="nutrition-info">
+                            <p><strong>Kiszerelés:</strong> 500ml</p>
+                            <div class="divider"></div>
+                        
+                            <p><strong>Kalcium:</strong> 50mg/L</p>
+                            <p><strong>Magnézium:</strong> 25mg/L</p>
+                            <p><strong>Hidrogén-karbonát:</strong> 200mg/L</p>
+                            <p><strong>Szulfát:</strong> 70mg/L</p>
+                            <p><strong>Nátrium:</strong> 12mg/L</p>
+                        
+                            <p style="margin-top: 10px;">
+                                *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
+                            </p>
+                            <div class="divider"></div>
+                        
+                            <p><strong>Összetevők:</strong></p>
+                            <p>Összes oldott ásványianyagtartalom: 400mg/l</p>
+                            </div>
                         </div>
-                      
-                        <div class="nutrition-info">
-                          <p><strong>Kiszerelés:</strong> 500ml</p>
-                          <div class="divider"></div>
-                      
-                          <p><strong>Kalcium:</strong> 50mg/L</p>
-                          <p><strong>Magnézium:</strong> 25mg/L</p>
-                          <p><strong>Hidrogén-karbonát:</strong> 200mg/L</p>
-                          <p><strong>Szulfát:</strong> 70mg/L</p>
-                          <p><strong>Nátrium:</strong> 12mg/L</p>
-                      
-                          <p style="margin-top: 10px;">
-                            *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
-                          </p>
-                          <div class="divider"></div>
-                      
-                          <p><strong>Összetevők:</strong></p>
-                          <p>Összes oldott ásványianyagtartalom: 400mg/l</p>
-                        </div>
-                      </div>
 
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="mainSection">
             <h2 style="text-align: center;">Vélemények</h2>
             <div class="gridcontainer">
