@@ -320,9 +320,12 @@ main {
 .quizBtn{
     width: 100%;
     margin-top: 56px;
+    display: flex;
+    justify-content: center;
 }
 
 .quizBtn a{
+    max-width: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -365,6 +368,7 @@ main {
 
 .mainJoinDiv img{
     width: 100%;
+    max-width: 1080px;
     height: auto;
     border-radius: 10px;
 }
