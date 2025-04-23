@@ -15,234 +15,254 @@ VARIABLE NAMING: <mainParent><function of>
     example: headerContainer
 -->
 <body>
-    <header class="section">
-        
-    </header>
-
-    <nav class="section">
-        <div class="navbarcontainer">
-            <div class="headerContainer">
-                <!--
-                                <div>
-                    <a href="index.html"><img src="img/icons/logo.png" class="logo" alt="LOGO"></a>
+    <div id="body">
+        <div class="off-screen-menu">
+            <div class="off-screen-buttons">
+                <div class="logoCon">
+                    <h1>AquaVibe</h1>
+                    <img class="logo" src="img/icons/logo.png" alt="">
                 </div>
-                -->
-                <a href="index.html">AquaVibe</a>
             </div>
-            <div class="navbarelemek">
+    
+            <div class="off-screen-container">
                 <ul>
                     <li><a href=""></a></li>
-                    <li><a href="s">Rólunk</a></li>
-                    <li><a href="#termekek">Márkáink</a></li>
+                    <li><a href="about.html">Rólunk</a></li>
+                    <li><a onclick="closeSideBar()" href="#termekek">Márkáink</a></li>
                     <li><a href="">Média</a></li>
-                    <li><a id="login" href="">Login</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <main class="section">
-        <div class="mainSection">
-            <div class="mainJoinDiv">
-                <img src="img/icons/mainJoinBackground.png" alt="">
-            </div>
-            <div class="quizBtn"><a href="quiz.html"><input type="button" value="Kérdőív"></a></div>
-        </div>
-        
-        <div class="productContainerNNN mainSection">
-            <div id="termekek" class="productContainer ">
-                <h2 class="product">Termékeink</h2>
-                <div class="productLeiras">
-                    <div class="productItems"><img src="img/icons/rosewater.png" alt="rosewater" class="water"></div>
-                    <div class="productItems">
-                        <h2>AquaVibe szénsavmentes természetes ásványvíz</h2>
-                        <p>Szénsavmentes természetes ásványvíz.</p>
-                        <p>Csecsemőtápszer készítésére alkalmas. Forralás nélkül adható a babáknak. A palackot a felbontás után tartsa száraz, hűvös helyen és 24 óra eltelte után használat előtt forralja fel az ásványvizet.</p>
-                        <div class="dropdown">
-                            <div class="toggle-container" onclick="toggleNutrition(this)">
-                            <span>Tápértékadatok megtekintése</span>
-                            <span class="spanImgArrow"><img class="arrow" src="img/icons/chevron-up.svg" alt="nyilFel"></span>
-                            </div>
-                        
-                            <div class="nutrition-info">
-                            <p><strong>Kiszerelés:</strong> 1L</p>
-                            <div class="divider"></div>
-                        
-                            <p><strong>Kalcium:</strong> 82mg/L</p>
-                            <p><strong>Magnézium:</strong> 41mg/L</p>
-                            <p><strong>Hidrogén-karbonát:</strong> 327mg/L</p>
-                            <p><strong>Szulfát:</strong> 108mg/L</p>
-                            <p><strong>Nátrium:</strong> 18mg/L</p>
-                        
-                            <p style="margin-top: 10px;">
-                                *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
-                            </p>
-                            <div class="divider"></div>
-                        
-                            <p><strong>Összetevők:</strong></p>
-                            <p>Összes oldott ásványianyagtartalom: 627mg/l</p>
-                            </div>
-                        </div>
+    
+        <div class="off-screen-overlay" onclick="closeSideBar()"></div>
+    
+        <nav class="section">
+            <div class="navbarcontainer">
+                <nav class="nav-ham-menu">
+                    <div class="ham-menu hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
+                </nav>
+                <div class="headerContainer">
+                    <a href="index.html">AquaVibe</a>
                 </div>
-                <div class="productLeiras centerProduct">    
-                    <div class="productItems"><img src="img/icons/water.png" alt="water" class="water right"></div>         
-                    <div class="productItems">
-                        <h2>Naturaqua szénsavas természetes ásványvíz</h2>
-                        <p>Szén-dioxiddal dúsított természetes ásványvíz.</p>
-                        <div class="dropdown">
-                            <div class="toggle-container" onclick="toggleNutrition(this)">
-                            <span>Tápértékadatok megtekintése</span>
-                            <span class="spanImgArrow"><img class="arrow" src="img/icons/chevron-up.svg" alt="nyilFel"></span>
-                            </div>
-                        
-                            <div class="nutrition-info">
-                            <p><strong>Kiszerelés:</strong> 500ml</p>
-                            <div class="divider"></div>
-                        
-                            <p><strong>Kalcium:</strong> 50mg/L</p>
-                            <p><strong>Magnézium:</strong> 25mg/L</p>
-                            <p><strong>Hidrogén-karbonát:</strong> 200mg/L</p>
-                            <p><strong>Szulfát:</strong> 70mg/L</p>
-                            <p><strong>Nátrium:</strong> 12mg/L</p>
-                        
-                            <p style="margin-top: 10px;">
-                                *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
-                            </p>
-                            <div class="divider"></div>
-                        
-                            <p><strong>Összetevők:</strong></p>
-                            <p>Összes oldott ásványianyagtartalom: 400mg/l</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="productLeiras">
-                    <div class="productItems"><img src="img/icons/zoldviz.png" alt="zoldviz" class="water"></div>
-                    <div class="productItems">
-                        <h2>Naturaqua enyhén szénsavas természetes ásványvíz</h2>
-                        <p>Szén-dioxiddal enyhén dúsított természetes ásványvíz.</p>
-                        <div class="dropdown">
-                            <div class="toggle-container" onclick="toggleNutrition(this)">
-                            <span>Tápértékadatok megtekintése</span>
-                            <span class="spanImgArrow"><img class="arrow" src="img/icons/chevron-up.svg" alt="nyilFel"></span>
-                            </div>
-                        
-                            <div class="nutrition-info">
-                            <p><strong>Kiszerelés:</strong> 500ml</p>
-                            <div class="divider"></div>
-                        
-                            <p><strong>Kalcium:</strong> 50mg/L</p>
-                            <p><strong>Magnézium:</strong> 25mg/L</p>
-                            <p><strong>Hidrogén-karbonát:</strong> 200mg/L</p>
-                            <p><strong>Szulfát:</strong> 70mg/L</p>
-                            <p><strong>Nátrium:</strong> 12mg/L</p>
-                        
-                            <p style="margin-top: 10px;">
-                                *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
-                            </p>
-                            <div class="divider"></div>
-                        
-                            <p><strong>Összetevők:</strong></p>
-                            <p>Összes oldott ásványianyagtartalom: 400mg/l</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="mainSection">
-            <h2 style="text-align: center;">Vélemények</h2>
-            <div class="gridcontainer">
-                <div class="gridcard">
-                    <h4>H. Renáta</h4>
-                    <p>Nagyon élveztem a kurzust, minden percét megérte!
-                        Rengeteget tanultam, és közben még szórakoztató is volt.</p>
-                </div>
-                <div class="gridcard">
-                    <h4>Sz. György</h4>
-                    <p>Kiválóan felépített tananyag és lelkes oktató!
-                        Minden világos és könnyen követhető volt.</p>
-                </div>
-                <div class="gridcard">
-                    <h4>L. Miklós</h4>
-                    <p>Ez a kurzus messze túlszárnyalta az elvárásaimat.
-                        Örülök, hogy belevágtam!</p>
-                </div>
-                <div class="gridcard">
-                    <h4>P. Bálint</h4>
-                    <p>Nagyon inspiráló volt, új lendületet kaptam a tanuláshoz.
-                        Mindenkinek ajánlom!
-                        
-                        </p>
-                </div>
-                <div class="gridcard">
-                    <h4>S. András</h4>
-                    <p>A kurzus után sokkal magabiztosabbnak érzem magam.
-                        Végre értem, amit eddig nem sikerült!</p>
-                </div>
-                <div class="gridcard">
-                    <h4>Cs. Csepke</h4>
-                    <p>Szuper élmény volt, tele hasznos tudással!
-                        Bárcsak hamarabb jelentkeztem volna!</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer class="section">
-        <div class="main-footer-section">
-            <div class="footer-logo"><h2>AquaVibe</h2></div>
-            <div class="footer-list-container">
-                <div class="footer-list">
-                    <h3 class="bebas-neue-regular">Rólunk</h3>
+                <div class="navbarelemek">
                     <ul>
-                        <li><a href="">Cégünk</a></li>
-                        <li><a href="">Történetünk</a></li>
-                        <li><a href="">Álláslehetőségek</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href="about.html">Rólunk</a></li>
+                        <li><a href="#termekek">Márkáink</a></li>
                         <li><a href="">Média</a></li>
-                    </ul>
-                </div>
-                <div class="footer-list">
-                    <h3 class="bebas-neue-regular">Segítség</h3>
-                    <ul>
-                        <li><a href="">Kapcsolat</a></li>
-                        <li><a href="gyik.html">GYIK</a></li>
-                        <li><a href="">Oldaltérkép</a></li>
-                    </ul>
-                </div>
-                <div class="footer-list">
-                    <h3 class="bebas-neue-regular">Jogi információk</h3>
-                    <ul>
-                        <li><a href="">Felhasználási feltételek</a></li>
-                        <li><a href="">Adatvédelmi irányelvek</a></li>
-                        <li><a href="">Cookie szabályzat</a></li>
-                        <li><a href="">Cookie beállítások</a></li>
+                        <li><a id="login" href="">Login</a></li>
                     </ul>
                 </div>
             </div>
+        </nav>
     
-            <div class="">
-                <div class="footer-button-container">
-                    <div class="footer-icon-container">
-                        <a href=""><img src="img/icons/shopping-bag.svg" alt="logo"></a>
-                        <a href=""><img src="img/icons/instagram.svg" alt="instagram"></a>
-                        <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
-                        <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
+        <main class="section">
+            <div class="mainSection">
+                <div class="mainJoinDiv">
+                    <img src="img/icons/mainJoinBackground.png" alt="">
+                </div>
+                <div class="quizBtn"><a href="quiz.html"><input type="button" value="Kérdőív"></a></div>
+            </div>
+            
+            <div class="productContainerNNN mainSection">
+                <div id="termekek" class="productContainer ">
+                    <h2 class="product">Termékeink</h2>
+                    <div class="productLeiras">
+                        <div class="productItems"><img src="img/icons/rosewater.png" alt="rosewater" class="water"></div>
+                        <div class="productItems">
+                            <h2>AquaVibe szénsavmentes természetes ásványvíz</h2>
+                            <p>Szénsavmentes természetes ásványvíz.</p>
+                            <p>Csecsemőtápszer készítésére alkalmas. Forralás nélkül adható a babáknak. A palackot a felbontás után tartsa száraz, hűvös helyen és 24 óra eltelte után használat előtt forralja fel az ásványvizet.</p>
+                            <div class="dropdown">
+                                <div class="toggle-container" onclick="toggleNutrition(this)">
+                                <span>Tápértékadatok megtekintése</span>
+                                <span class="spanImgArrow"><img class="arrow" src="img/icons/chevron-up.svg" alt="nyilFel"></span>
+                                </div>
+                            
+                                <div class="nutrition-info">
+                                <p><strong>Kiszerelés:</strong> 1L</p>
+                                <div class="divider"></div>
+                            
+                                <p><strong>Kalcium:</strong> 82mg/L</p>
+                                <p><strong>Magnézium:</strong> 41mg/L</p>
+                                <p><strong>Hidrogén-karbonát:</strong> 327mg/L</p>
+                                <p><strong>Szulfát:</strong> 108mg/L</p>
+                                <p><strong>Nátrium:</strong> 18mg/L</p>
+                            
+                                <p style="margin-top: 10px;">
+                                    *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
+                                </p>
+                                <div class="divider"></div>
+                            
+                                <p><strong>Összetevők:</strong></p>
+                                <p>Összes oldott ásványianyagtartalom: 627mg/l</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <input type="button" value="Csatlakozom">
+                    <div class="productLeiras centerProduct">    
+                        <div class="productItems"><img src="img/icons/water.png" alt="water" class="water right"></div>         
+                        <div class="productItems">
+                            <h2>Naturaqua szénsavas természetes ásványvíz</h2>
+                            <p>Szén-dioxiddal dúsított természetes ásványvíz.</p>
+                            <div class="dropdown">
+                                <div class="toggle-container" onclick="toggleNutrition(this)">
+                                <span>Tápértékadatok megtekintése</span>
+                                <span class="spanImgArrow"><img class="arrow" src="img/icons/chevron-up.svg" alt="nyilFel"></span>
+                                </div>
+                            
+                                <div class="nutrition-info">
+                                <p><strong>Kiszerelés:</strong> 500ml</p>
+                                <div class="divider"></div>
+                            
+                                <p><strong>Kalcium:</strong> 50mg/L</p>
+                                <p><strong>Magnézium:</strong> 25mg/L</p>
+                                <p><strong>Hidrogén-karbonát:</strong> 200mg/L</p>
+                                <p><strong>Szulfát:</strong> 70mg/L</p>
+                                <p><strong>Nátrium:</strong> 12mg/L</p>
+                            
+                                <p style="margin-top: 10px;">
+                                    *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
+                                </p>
+                                <div class="divider"></div>
+                            
+                                <p><strong>Összetevők:</strong></p>
+                                <p>Összes oldott ásványianyagtartalom: 400mg/l</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productLeiras">
+                        <div class="productItems"><img src="img/icons/zoldviz.png" alt="zoldviz" class="water"></div>
+                        <div class="productItems">
+                            <h2>Naturaqua enyhén szénsavas természetes ásványvíz</h2>
+                            <p>Szén-dioxiddal enyhén dúsított természetes ásványvíz.</p>
+                            <div class="dropdown">
+                                <div class="toggle-container" onclick="toggleNutrition(this)">
+                                <span>Tápértékadatok megtekintése</span>
+                                <span class="spanImgArrow"><img class="arrow" src="img/icons/chevron-up.svg" alt="nyilFel"></span>
+                                </div>
+                            
+                                <div class="nutrition-info">
+                                <p><strong>Kiszerelés:</strong> 500ml</p>
+                                <div class="divider"></div>
+                            
+                                <p><strong>Kalcium:</strong> 50mg/L</p>
+                                <p><strong>Magnézium:</strong> 25mg/L</p>
+                                <p><strong>Hidrogén-karbonát:</strong> 200mg/L</p>
+                                <p><strong>Szulfát:</strong> 70mg/L</p>
+                                <p><strong>Nátrium:</strong> 12mg/L</p>
+                            
+                                <p style="margin-top: 10px;">
+                                    *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
+                                </p>
+                                <div class="divider"></div>
+                            
+                                <p><strong>Összetevők:</strong></p>
+                                <p>Összes oldott ásványianyagtartalom: 400mg/l</p>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
                 </div>
             </div>
     
-            <div class="footer-section">
-                <div class="footer-links-container">
-                    <span>&COPY; 2025 AquaVibe | All rigths reserved.</span>
+            <div class="mainSection">
+                <h2 style="text-align: center;">Vélemények</h2>
+                <div class="gridcontainer">
+                    <div class="gridcard">
+                        <h4>H. Renáta</h4>
+                        <p>Nagyon élveztem a kurzust, minden percét megérte!
+                            Rengeteget tanultam, és közben még szórakoztató is volt.</p>
+                    </div>
+                    <div class="gridcard">
+                        <h4>Sz. György</h4>
+                        <p>Kiválóan felépített tananyag és lelkes oktató!
+                            Minden világos és könnyen követhető volt.</p>
+                    </div>
+                    <div class="gridcard">
+                        <h4>L. Miklós</h4>
+                        <p>Ez a kurzus messze túlszárnyalta az elvárásaimat.
+                            Örülök, hogy belevágtam!</p>
+                    </div>
+                    <div class="gridcard">
+                        <h4>P. Bálint</h4>
+                        <p>Nagyon inspiráló volt, új lendületet kaptam a tanuláshoz.
+                            Mindenkinek ajánlom!
+                            
+                            </p>
+                    </div>
+                    <div class="gridcard">
+                        <h4>S. András</h4>
+                        <p>A kurzus után sokkal magabiztosabbnak érzem magam.
+                            Végre értem, amit eddig nem sikerült!</p>
+                    </div>
+                    <div class="gridcard">
+                        <h4>Cs. Csepke</h4>
+                        <p>Szuper élmény volt, tele hasznos tudással!
+                            Bárcsak hamarabb jelentkeztem volna!</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </main>
+    
+        <footer class="section">
+            <div class="main-footer-section">
+                <div class="footer-logo"><h2>AquaVibe</h2></div>
+                <div class="footer-list-container">
+                    <div class="footer-list">
+                        <h3 class="bebas-neue-regular">Rólunk</h3>
+                        <ul>
+                            <li><a href="">Cégünk</a></li>
+                            <li><a href="">Történetünk</a></li>
+                            <li><a href="">Álláslehetőségek</a></li>
+                            <li><a href="">Média</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <h3 class="bebas-neue-regular">Segítség</h3>
+                        <ul>
+                            <li><a href="">Kapcsolat</a></li>
+                            <li><a href="gyik.html">GYIK</a></li>
+                            <li><a href="">Oldaltérkép</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <h3 class="bebas-neue-regular">Jogi információk</h3>
+                        <ul>
+                            <li><a href="">Felhasználási feltételek</a></li>
+                            <li><a href="">Adatvédelmi irányelvek</a></li>
+                            <li><a href="">Cookie szabályzat</a></li>
+                            <li><a href="">Cookie beállítások</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="">
+                    <div class="footer-button-container">
+                        <div class="footer-icon-container">
+                            <a href=""><img src="img/icons/shopping-bag.svg" alt="logo"></a>
+                            <a href=""><img src="img/icons/instagram.svg" alt="instagram"></a>
+                            <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
+                            <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
+                        </div>
+                        <input type="button" value="Csatlakozom">
+                    </div>
+                </div>
+        
+                <div class="footer-section">
+                    <div class="footer-links-container">
+                        <span>&COPY; 2025 AquaVibe | All rigths reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
 
@@ -266,23 +286,22 @@ TODO: minden, saját beetűtípus
 https://open.spotify.com/playlist/13mSKGefyqQctAigf2Eejm?si=a6473b1dc9ee4980
 -->
 
-<style>
-    .too-wide {
-      border: 1px solid red !important;
+<script defer>
+    const hamMenu = document.querySelector(".ham-menu");
+
+    const offScreenMenu = document.querySelector(".off-screen-menu");
+    const html= document.querySelector("html")
+    const body = document.getElementById("body");
+
+
+    hamMenu.addEventListener("click", () => {
+        closeSideBar()
+    })
+
+    function closeSideBar(){
+        hamMenu.classList.toggle("active");
+        offScreenMenu.classList.toggle("active");
+        html.classList.toggle("active");
+        body.classList.toggle("active");
     }
-  </style>
-  
-  <script>
-    window.addEventListener('load', () => {
-      const bodyWidth = document.body.clientWidth;
-      const allElements = document.querySelectorAll('*');
-  
-      allElements.forEach(el => {
-        const elRect = el.getBoundingClientRect();
-        if (elRect.width > bodyWidth) {
-          el.classList.add('too-wide');
-          console.log('Túl széles elem:', el);
-        }
-      });
-    });
-  </script>
+</script>
