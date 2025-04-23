@@ -21,15 +21,13 @@ VARIABLE NAMING: <mainParent><function of>
 
     <nav class="section">
         <div class="navbarcontainer">
-            <div>
-                <div class="headerContainer">
-                    <div>
-                        <a href="index.html"><img src="img/icons/ChatGPT Image 2025. ápr. 21. 20_20_08.png" class="logo" alt="LOGO"></a>
-                    </div>
-                    <div>
-                        <a href="index.html"><h1>AquaVibe</h1></a>
-                    </div>
+            <div class="headerContainer">
+                <!--
+                                <div>
+                    <a href="index.html"><img src="img/icons/logo.png" class="logo" alt="LOGO"></a>
                 </div>
+                -->
+                <a href="index.html">AquaVibe</a>
             </div>
             <div class="navbarelemek">
                 <ul>
@@ -44,17 +42,15 @@ VARIABLE NAMING: <mainParent><function of>
     </nav>
 
     <main class="section">
-        <div class="imgcenter">
+        <div class="imgcenter mainSection">
             <div class="mainJoinDiv">
             </div>
         </div>
-        <div>
+        <div class="productContainer mainSection">
             <h2 class="product">Termékeink</h2>
-        </div>
-        <div class="productContainer">
             <div class="productLeiras">
-                <div><img src="img/icons/rosewater.png" alt="rosewater" class="water"></div>
-                <div>
+                <div class="productItems"><img src="img/icons/rosewater.png" alt="rosewater" class="water"></div>
+                <div class="productItems">
                     <h2>AquaVibe szénsavmentes természetes ásványvíz</h2>
                     <p>Szénsavmentes természetes ásványvíz.</p>
                     <p>Csecsemőtápszer készítésére alkalmas. Forralás nélkül adható a babáknak. A palackot a felbontás után tartsa száraz, hűvös helyen és 24 óra eltelte után használat előtt forralja fel az ásványvizet.</p>
@@ -84,24 +80,10 @@ VARIABLE NAMING: <mainParent><function of>
                         </div>
                       </div>
                 </div>
-                <script>
-                    function toggleNutrition(container) {
-                      const arrow = container.querySelector(".arrow");
-                      const info = container.nextElementSibling;
-                  
-                      if (info.style.display === "none" || info.style.display === "") {
-                        info.style.display = "block";
-                        arrow.classList.add("down");
-                      } else {
-                        info.style.display = "none";
-                        arrow.classList.remove("down");
-                      }
-                    }
-                  </script>
             </div>
             <div class="productLeiras">              
-                <div><img src="img/icons/water.png" alt="water" class="water right"></div>
-                <div>
+                <div class="productItems"><img src="img/icons/water.png" alt="water" class="water right"></div>
+                <div class="productItems">
                     <h2>Naturaqua szénsavas természetes ásványvíz</h2>
                     <p>Szén-dioxiddal dúsított természetes ásványvíz.</p>
                     <div class="dropdown">
@@ -128,26 +110,12 @@ VARIABLE NAMING: <mainParent><function of>
                           <p><strong>Összetevők:</strong></p>
                           <p>Összes oldott ásványianyagtartalom: 400mg/l</p>
                         </div>
-                        <script>
-                            function toggleNutrition(container) {
-                              const arrow = container.querySelector(".arrow");
-                              const info = container.nextElementSibling;
-                          
-                              if (info.style.display === "none" || info.style.display === "") {
-                                info.style.display = "block";
-                                arrow.classList.add("down");
-                              } else {
-                                info.style.display = "none";
-                                arrow.classList.remove("down");
-                              }
-                            }
-                          </script>
                       </div>
                 </div>
             </div>
             <div class="productLeiras">
-                <div><img src="img/icons/zoldviz.png" alt="zoldviz" class="water"></div>
-                <div>
+                <div class="productItems"><img src="img/icons/zoldviz.png" alt="zoldviz" class="water"></div>
+                <div class="productItems">
                     <h2>Naturaqua enyhén szénsavas természetes ásványvíz</h2>
                     <p>Szén-dioxiddal enyhén dúsított természetes ásványvíz.</p>
                     <div class="dropdown">
@@ -175,24 +143,11 @@ VARIABLE NAMING: <mainParent><function of>
                           <p>Összes oldott ásványianyagtartalom: 400mg/l</p>
                         </div>
                       </div>
-                      <script>
-                        function toggleNutrition(container) {
-                          const arrow = container.querySelector(".arrow");
-                          const info = container.nextElementSibling;
-                      
-                          if (info.style.display === "none" || info.style.display === "") {
-                            info.style.display = "block";
-                            arrow.classList.add("down");
-                          } else {
-                            info.style.display = "none";
-                            arrow.classList.remove("down");
-                          }
-                        }
-                      </script>
+
                 </div>
             </div>
         </div>
-        <div>
+        <div class="mainSection">
             <h2 style="text-align: center;">Vélemények</h2>
             <div class="gridcontainer">
                 <div class="gridcard">
@@ -285,7 +240,43 @@ VARIABLE NAMING: <mainParent><function of>
 </body>
 </html>
 
+<script>
+    function toggleNutrition(container) {
+      const arrow = container.querySelector(".arrow");
+      const info = container.nextElementSibling;
+  
+      if (info.style.display === "none" || info.style.display === "") {
+        info.style.display = "block";
+        arrow.classList.add("down");
+      } else {
+        info.style.display = "none";
+        arrow.classList.remove("down");
+      }
+    }
+</script>
+
 <!--
 TODO: minden, saját beetűtípus
 https://open.spotify.com/playlist/13mSKGefyqQctAigf2Eejm?si=a6473b1dc9ee4980
 -->
+
+<style>
+    .too-wide {
+      border: 1px solid red !important;
+    }
+  </style>
+  
+  <script>
+    window.addEventListener('load', () => {
+      const bodyWidth = document.body.clientWidth;
+      const allElements = document.querySelectorAll('*');
+  
+      allElements.forEach(el => {
+        const elRect = el.getBoundingClientRect();
+        if (elRect.width > bodyWidth) {
+          el.classList.add('too-wide');
+          console.log('Túl széles elem:', el);
+        }
+      });
+    });
+  </script>
