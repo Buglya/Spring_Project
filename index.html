@@ -53,19 +53,143 @@ VARIABLE NAMING: <mainParent><function of>
         </div>
         <div class="productContainer">
             <div class="productLeiras">
-                <div><img src="" alt=""></div>
-                <div><p></p></div>
-                <div></div>
+                <div><img src="img/icons/rosewater.png" alt="rosewater" class="water"></div>
+                <div>
+                    <h2>AquaVibe szénsavmentes természetes ásványvíz</h2>
+                    <p>Szénsavmentes természetes ásványvíz.</p>
+                    <p>Csecsemőtápszer készítésére alkalmas. Forralás nélkül adható a babáknak. A palackot a felbontás után tartsa száraz, hűvös helyen és 24 óra eltelte után használat előtt forralja fel az ásványvizet.</p>
+                    <div class="dropdown">
+                        <div class="toggle-container" onclick="toggleNutrition(this)">
+                          <span>Tápértékadatok megtekintése</span>
+                          <span class="arrow">&#9650;</span>
+                        </div>
+                      
+                        <div class="nutrition-info">
+                          <p><strong>Kiszerelés:</strong> 1L</p>
+                          <div class="divider"></div>
+                      
+                          <p><strong>Kalcium:</strong> 82mg/L</p>
+                          <p><strong>Magnézium:</strong> 41mg/L</p>
+                          <p><strong>Hidrogén-karbonát:</strong> 327mg/L</p>
+                          <p><strong>Szulfát:</strong> 108mg/L</p>
+                          <p><strong>Nátrium:</strong> 18mg/L</p>
+                      
+                          <p style="margin-top: 10px;">
+                            *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
+                          </p>
+                          <div class="divider"></div>
+                      
+                          <p><strong>Összetevők:</strong></p>
+                          <p>Összes oldott ásványianyagtartalom: 627mg/l</p>
+                        </div>
+                      </div>
+                </div>
+                <script>
+                    function toggleNutrition(container) {
+                      const arrow = container.querySelector(".arrow");
+                      const info = container.nextElementSibling;
+                  
+                      if (info.style.display === "none" || info.style.display === "") {
+                        info.style.display = "block";
+                        arrow.classList.add("down");
+                      } else {
+                        info.style.display = "none";
+                        arrow.classList.remove("down");
+                      }
+                    }
+                  </script>
+            </div>
+            <div class="productLeiras">              
+                <div><img src="img/icons/water.png" alt="water" class="water right"></div>
+                <div>
+                    <h2>Naturaqua szénsavas természetes ásványvíz</h2>
+                    <p>Szén-dioxiddal dúsított természetes ásványvíz.</p>
+                    <div class="dropdown">
+                        <div class="toggle-container" onclick="toggleNutrition(this)">
+                          <span>Tápértékadatok megtekintése</span>
+                          <span class="arrow">&#9650;</span>
+                        </div>
+                      
+                        <div class="nutrition-info">
+                          <p><strong>Kiszerelés:</strong> 500ml</p>
+                          <div class="divider"></div>
+                      
+                          <p><strong>Kalcium:</strong> 50mg/L</p>
+                          <p><strong>Magnézium:</strong> 25mg/L</p>
+                          <p><strong>Hidrogén-karbonát:</strong> 200mg/L</p>
+                          <p><strong>Szulfát:</strong> 70mg/L</p>
+                          <p><strong>Nátrium:</strong> 12mg/L</p>
+                      
+                          <p style="margin-top: 10px;">
+                            *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
+                          </p>
+                          <div class="divider"></div>
+                      
+                          <p><strong>Összetevők:</strong></p>
+                          <p>Összes oldott ásványianyagtartalom: 400mg/l</p>
+                        </div>
+                        <script>
+                            function toggleNutrition(container) {
+                              const arrow = container.querySelector(".arrow");
+                              const info = container.nextElementSibling;
+                          
+                              if (info.style.display === "none" || info.style.display === "") {
+                                info.style.display = "block";
+                                arrow.classList.add("down");
+                              } else {
+                                info.style.display = "none";
+                                arrow.classList.remove("down");
+                              }
+                            }
+                          </script>
+                      </div>
+                </div>
             </div>
             <div class="productLeiras">
-                <div><p></p></div>                
-                <div><img src="" alt=""></div>
-                <div></div>
-            </div>
-            <div class="productLeiras">
-                <div><img src="" alt=""></div>
-                <div><p></p></div>
-                <div></div>
+                <div><img src="img/icons/zoldviz.png" alt="zoldviz" class="water"></div>
+                <div>
+                    <h2>Naturaqua enyhén szénsavas természetes ásványvíz</h2>
+                    <p>Szén-dioxiddal enyhén dúsított természetes ásványvíz.</p>
+                    <div class="dropdown">
+                        <div class="toggle-container" onclick="toggleNutrition(this)">
+                          <span>Tápértékadatok megtekintése</span>
+                          <span class="arrow">&#9650;</span>
+                        </div>
+                      
+                        <div class="nutrition-info">
+                          <p><strong>Kiszerelés:</strong> 500ml</p>
+                          <div class="divider"></div>
+                      
+                          <p><strong>Kalcium:</strong> 50mg/L</p>
+                          <p><strong>Magnézium:</strong> 25mg/L</p>
+                          <p><strong>Hidrogén-karbonát:</strong> 200mg/L</p>
+                          <p><strong>Szulfát:</strong> 70mg/L</p>
+                          <p><strong>Nátrium:</strong> 12mg/L</p>
+                      
+                          <p style="margin-top: 10px;">
+                            *Referencia beviteli érték egy átlagos felnőtt számára (8400kJ / 2000kcal).
+                          </p>
+                          <div class="divider"></div>
+                      
+                          <p><strong>Összetevők:</strong></p>
+                          <p>Összes oldott ásványianyagtartalom: 400mg/l</p>
+                        </div>
+                      </div>
+                      <script>
+                        function toggleNutrition(container) {
+                          const arrow = container.querySelector(".arrow");
+                          const info = container.nextElementSibling;
+                      
+                          if (info.style.display === "none" || info.style.display === "") {
+                            info.style.display = "block";
+                            arrow.classList.add("down");
+                          } else {
+                            info.style.display = "none";
+                            arrow.classList.remove("down");
+                          }
+                        }
+                      </script>
+                </div>
             </div>
         </div>
         <div>
