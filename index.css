@@ -4,7 +4,7 @@
     --ff: Archivo-Regular;
     --colorprimary: black;
     --colorsecondary: white;
-    --coloraccent: #13a1c5;
+    --coloraccent: #0b8bcc;
     --coloraccentshade: #7242d948;
     --h1: bold 54px/64px var(--ff);
     --h2: bold 36px/36px var(--ff);
@@ -134,13 +134,42 @@ nav li {
 .mainSection{
     width: 100%;
     height: auto;
-    margin-bottom: 40vh;
+    margin-bottom: 25vh;
 }
 
 main {
     height: auto;
     margin: 0 15vw 50vh 15vw
 }
+
+.quizBtn{
+    margin-top: 56px;
+}
+
+.quizBtn a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.quizBtn input{
+    width: 20%;
+    height: 50px;
+    border: 1px solid var(--coloraccent);
+    background: linear-gradient(90deg, var(--coloraccent), #0b8ccc81);
+    color: var(--colorsecondary);
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.quizBtn input:hover{
+    background-color: var(--coloraccent);
+    transition: .3s;
+}
+
 
 .mainImgCover{
     position: absolute;
@@ -151,14 +180,19 @@ main {
 }
 
 .mainJoinDiv {
-    position: relative;
-    width: 860px;
-    height: 573px;
-    background-image: url(img/icons/mainJoinBackground.png);
-    background-size: 100% 100%;                
-    background-repeat: no-repeat;
-    background-position: center center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
 }
+
+.mainJoinDiv img{
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
 .mainCoverContainer{
     position: relative;
     display: grid;
@@ -175,59 +209,13 @@ main {
     align-self: center;
 }
 
-.mainJoinDiv span{
-    position: relative;
-    font-size: 5rem;
-    font-weight: bold;
-    z-index: 10;
-    color: var(--colorsecondary);
-    margin-top: 5vh;
-    margin-left: 5vw;
-}
-
-.mainJoinDiv label{
-    color: var(--coloraccent);
-    background-color: #000000bb;
-    border-radius: 5px;
-    padding-bottom: 2px;
-    padding-top: 2px;
-}
-
-.mainJoinDiv h1 {
-    color: var(--colorsecondary);
-    margin-left: 5vw;
-}
-
-.mainJoinDiv input[type="button"] {
-    font-size: 2.7rem;
-    font-weight: bold;
-    background-color: transparent;
-    color: var(--colorsecondary);
-    border: 6px solid var(--coloraccent);
-    width: 15vw;
-    height: 5vh;
-    border-radius: 5px;
-    margin-right: 5vw;
-    transition: .2s;
-}
-
-.mainJoinDiv input[type="button"]:hover {
-    transition: .2s;
-    background-color: #0000006b;
-    scale: 1.05;
-}
-
 .product {
     width: 100%;
     text-align: center;
     font-size: 3rem;
+    margin-bottom: 3vw;
 }
 
-.imgcenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .water {
     width: 544px;
@@ -404,7 +392,7 @@ main {
 }
 
 .gridcard:nth-child(2n+1) {
-    background-color:#13a1c588;
+    background-color:#0b8ccc3d;
 }
 
 .gridcard:nth-child(2n+2) {
