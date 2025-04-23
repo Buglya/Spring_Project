@@ -282,6 +282,11 @@ main {
     box-shadow: none;
 }
 
+.centerProduct{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 @media(max-width: 1555px){
     .productContainer{
         display: grid;
@@ -291,6 +296,8 @@ main {
 
     .productLeiras{
         display: grid;
+        justify-content: center;
+        align-items: center;
     }
 
     .productItems{
@@ -303,25 +310,20 @@ main {
         text-align: left;
     }
 
-    .dropdown, .toggle-container{
+    .dropdownm, .toggle-container, .nutrition-info{
         width: 100%;
     }
 
-    /* Megkell csinálni */
-    .grid-conatiner{
-        width: 100%;
+    .centerProduct{
         display: grid;
-        grid-auto-columns: 43vw;
-        grid-auto-rows: 40vh;
-        gap: 100px;
-        grid-template-areas: "box-1 box-2"
-                             "box-4 box-3"
-                             "box-5 box-6";
+        justify-content: center;
+        align-items: center;
     }
-
 }
 
+
 .toggle-container {
+    width: 90%;
     display: flex;
     align-items: center;
     background-color: white;
@@ -344,12 +346,13 @@ main {
   }
 
   .nutrition-info {
+    width: 90%;
     display: none;
     padding: 10px 15px;
     border: 1px solid #ccc;
     border-top: none;
     background-color: #f9f9f9;
-    max-width: 400px;
+    /*max-width: 400px;*/
     font-size: 15px;
     transition: .3s;
   }
