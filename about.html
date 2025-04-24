@@ -21,7 +21,7 @@
             <ul>
                 <li><a href=""></a></li>
                 <li><a href="about.html">Rólunk</a></li>
-                <li><a onclick="closeSideBar()" href="#termekek">Márkáink</a></li>
+                <li><a onclick="closeSideBar()" href="index.html#termekek">Márkáink</a></li>
                 <li><a href="">Média</a></li>
             </ul>
         </div>
@@ -109,8 +109,8 @@
             </table>
         </div>
         <div class="kep"><img src="" alt="kep1"></div>
-        
     </div>
+
     <div class="wordbox wordbox2">
         <div class="szoveges">
             <h2>A hely ahol született</h2>
@@ -118,6 +118,7 @@
         </div>
         <div class="kep2"><img src="img/icons/mechwart.jpg" alt="kep2"></div>
     </div>
+
     <div class="wordbox">
         <div class="szoveges"><h2>A világ legtermészetesebb itala</h2>
             <p>A 1900-as évek elején az AquaVibe már nemcsak Debrecen városában, hanem szerte az Alföldön egyre ismertebbé vált. Az első bánki telephelyet követően új palackozóüzem nyílt Hajdúszoboszlón, majd Nyíregyházán, lehetővé téve, hogy a Bánki-forrás vize még több emberhez eljusson.</p>
@@ -125,7 +126,7 @@
         </div>
         <div class="kep"><img src="img/icons/Képernyőkép 2025-04-23 194837.jpg" alt="kep3"></div>
     </div>
-    <div>
+    <div class="leiras">
         <h2>Aqua Vibe – Színekbe csomagolt frissesség</h2>
         <p class="rizsa">Az Aqua Vibe nem csupán egy palack víz – ez egy életérzés, ami minden kortyban ott van veled. Három különböző színű kupakkal és stílusos dizájnnal érkezik, hogy tükrözze a hangulatod. A zöld a természetesség és nyugalom jegyében készült, a kék a klasszikus frissességet idézi, míg a rózsaszín a játékos energiát képviseli. Praktikus, ergonomikus palackformája miatt tökéletes útitárs sporthoz, munkához vagy iskolába. </p>
         <p class="rizsa">A tiszta, szűrt víz minden kortyban garantálja a felfrissülést és a jó közérzetet. Az Aqua Vibe nemcsak hidratál, hanem inspirál is, hogy többet hozz ki a napodból. Kompakt méretének köszönhetően bármilyen táskában elfér, így mindig kéznél van, amikor szükséged van rá.</p>
@@ -133,6 +134,76 @@
     </div>
 </div>
 </main>
+<footer class="section">
+    <div class="main-footer-section">
+        <div class="footer-logo"><h2>AquaVibe</h2></div>
+        <div class="footer-list-container">
+            <div class="footer-list">
+                <h3 class="bebas-neue-regular">Rólunk</h3>
+                <ul>
+                    <li><a href="">Cégünk</a></li>
+                    <li><a href="">Történetünk</a></li>
+                    <li><a href="">Álláslehetőségek</a></li>
+                    <li><a href="">Média</a></li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h3 class="bebas-neue-regular">Segítség</h3>
+                <ul>
+                    <li><a href="">Kapcsolat</a></li>
+                    <li><a href="gyik.html">GYIK</a></li>
+                    <li><a href="">Oldaltérkép</a></li>
+                </ul>
+            </div>
+            <div class="footer-list">
+                <h3 class="bebas-neue-regular">Jogi információk</h3>
+                <ul>
+                    <li><a href="">Felhasználási feltételek</a></li>
+                    <li><a href="">Adatvédelmi irányelvek</a></li>
+                    <li><a href="">Cookie szabályzat</a></li>
+                    <li><a href="">Cookie beállítások</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="footer-button-container">
+                <div class="footer-icon-container">
+                    <a href=""><img src="img/icons/shopping-bag.svg" alt="logo"></a>
+                    <a href=""><img src="img/icons/instagram.svg" alt="instagram"></a>
+                    <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
+                    <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <div class="footer-links-container">
+                <span>&COPY; 2025 AquaVibe | All rigths reserved.</span>
+            </div>
+        </div>
+    </div>
+</footer>
 </div>
 </body>
 </html>
+
+<script defer>
+    const hamMenu = document.querySelector(".ham-menu");
+
+    const offScreenMenu = document.querySelector(".off-screen-menu");
+    const html= document.querySelector("html")
+    const body = document.getElementById("body");
+
+
+    hamMenu.addEventListener("click", () => {
+        closeSideBar()
+    })
+
+    function closeSideBar(){
+        hamMenu.classList.toggle("active");
+        offScreenMenu.classList.toggle("active");
+        html.classList.toggle("active");
+        body.classList.toggle("active");
+    }
+</script>

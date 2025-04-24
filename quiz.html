@@ -48,7 +48,7 @@
                         <li><a href="about.html">Rólunk</a></li>
                         <li><a href="#termekek">Márkáink</a></li>
                         <li><a href="">Média</a></li>
-                        <li><a id="login" href="">Login</a></li>
+                        <li><a href=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -59,97 +59,94 @@
                 <h1>Víz tudatos használata</h1>
             </div>
     
-            <div class="questionContainer">
-                <div class="question">
-                    <h2>Milyen gyakran figyelsz oda arra, hogy ne pazarold a vizet otthon?</h2>
-                    <div class="radioConatiner">
-                        <div><input id="viz1M" name="viz1" type="radio"><label for="viz1M">Mindig</label></div>
-                        <div><input id="viz1GY" name="viz1" type="radio"><label for="viz1GY">Gyakran</label></div>
-                        <div><input id="viz1R" name="viz1" type="radio"><label for="viz1R">Ritkán</label></div>
-                        <div><input id="viz1S" name="viz1" type="radio"><label for="viz1S">Soha</label></div>
+            <form action="/quiz.html" method="POST">
+                <div class="questionContainer">
+                    <div class="question">
+                        <h2>Milyen gyakran figyelsz oda arra, hogy ne pazarold a vizet otthon?</h2>
+                        <div class="radioConatiner">
+                            <div><input id="viz1M" name="viz1" type="radio"><label for="viz1M">Mindig</label></div>
+                            <div><input id="viz1GY" name="viz1" type="radio"><label for="viz1GY">Gyakran</label></div>
+                            <div><input id="viz1R" name="viz1" type="radio"><label for="viz1R">Ritkán</label></div>
+                            <div><input id="viz1S" name="viz1" type="radio"><label for="viz1S">Soha</label></div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="question">
-                    <h2>Használsz víztakarékos eszközöket?</h2>
-                    <div class="radioConatiner">
-                        <div><input id="viz2I" name="viz2" type="radio"><label for="viz2I">Igen</label></div>
-                        <div><input id="viz2N" name="viz2" type="radio"><label for="viz2N">Nem</label></div>
-                        <div><input id="viz2NT" name="viz2" type="radio"><label for="viz2NT">Nem tudom, mik ezek</label></div>
-                    </div>
-                </div>
-                
-                <div class="question">
-                    <h2>Mennyi ideig szoktál zuhanyozni általában?</h2>
-                    <div class="radioConatiner">
-                        <div><input id="viz3A" name="viz3" type="radio"><label for="viz3A">5 percnél kevesebb</label></div>
-                        <div><input id="viz3B" name="viz3" type="radio"><label for="viz3B">5–10 perc</label></div>
-                        <div><input id="viz3C" name="viz3" type="radio"><label for="viz3C">10–15 perc</label></div>
-                        <div><input id="viz3D" name="viz3" type="radio"><label for="viz3D">15 percnél több</label></div>
-                    </div>
-                </div>
-                
-                <div class="question">
-                    <h2>Hogyan szoktál vizet inni napközben?</h2>
-                    <div class="radioConatiner">
-                        <div><input id="viz4A" name="viz4" type="radio"><label for="viz4A">Csapvíz</label></div>
-                        <div><input id="viz4B" name="viz4" type="radio"><label for="viz4B">Palackozott víz</label></div>
-                        <div><input id="viz4C" name="viz4" type="radio"><label for="viz4C">Szűrt víz</label></div>
-                        <div><input id="viz4D" name="viz4" type="radio"><label for="viz4D">Egyéb</label></div>
-                    </div>
-                </div>
-                
-                <div class="question">
-                    <h2>Tudod, hogy napi szinten mennyi vizet fogyasztasz?</h2>
-                    <div class="radioConatiner">
-                        <div><input id="viz5I" name="viz5" type="radio"><label for="viz5I">Igen, nagyjából</label></div>
-                        <div><input id="viz5NR" name="viz5" type="radio"><label for="viz5NR">Nem igazán</label></div>
-                        <div><input id="viz5N" name="viz5" type="radio"><label for="viz5N">Egyáltalán nem</label></div>
-                    </div>
-                </div>
-                
-                <div class="question">
-                    <h2>Zárod a csapot fogmosás vagy szappanozás közben?</h2>
-                    <div class="radioConatiner">
-                        <div><input id="viz6A" name="viz6" type="radio"><label for="viz6A">Igen, mindig</label></div>
-                        <div><input id="viz6B" name="viz6" type="radio"><label for="viz6B">Néha</label></div>
-                        <div><input id="viz6C" name="viz6" type="radio"><label for="viz6C">Nem</label></div>
-                    </div>
-                </div>
-                
-                <div class="question">
-                    <h2>Mit teszel, ha csöpög a csap vagy szivárog a WC-tartály?</h2>
-                    <div class="radioConatiner">
-                        <div><input id="viz7A" name="viz7" type="radio"><label for="viz7A">Azonnal megjavíttatom / megjavítom</label></div>
-                        <div><input id="viz7B" name="viz7" type="radio"><label for="viz7B">Elhalasztom a javítást</label></div>
-                        <div><input id="viz7C" name="viz7" type="radio"><label for="viz7C">Nem foglalkozom vele</label></div>
-                    </div>
-                </div>
-                
-                <div class="question">
-                    <h2>Szerinted mi a legfontosabb oka a víztakarékosságnak?</h2>
-                    <div class="radioConatiner">
-                        <div><textarea name="viz8" rows="4" cols="50" placeholder="Írd le a véleményed..."></textarea></div>
-                    </div>
-                </div>
-                
-                <div class="question">
-                    <h2>Részt vennél egy helyi vízhasználati oktatáson vagy kampányban?</h2>
-                    <div class="radioConatiner">
-                        <div><input id="viz9I" name="viz9" type="radio"><label for="viz9I">Igen</label></div>
-                        <div><input id="viz9N" name="viz9" type="radio"><label for="viz9N">Nem</label></div>
-                        <div><input id="viz9A" name="viz9" type="radio"><label for="viz9A">Attól függ, mikor és hol</label></div>
-                    </div>
-                </div>
-                
-                <div class="question">
-                    <h2>Van olyan saját praktikád a vízmegtakarításra, amit szívesen megosztanál?</h2>
-                    <div class="radioConatiner">
-                        <div><textarea name="viz10" rows="4" cols="50" placeholder="Írd le a praktikád..."></textarea></div>
-                    </div> 
                     
+                    <div class="question">
+                        <h2>Használsz víztakarékos eszközöket?</h2>
+                        <div class="radioConatiner">
+                            <div><input id="viz2I" name="viz2" type="radio"><label for="viz2I">Igen</label></div>
+                            <div><input id="viz2N" name="viz2" type="radio"><label for="viz2N">Nem</label></div>
+                            <div><input id="viz2NT" name="viz2" type="radio"><label for="viz2NT">Nem tudom, mik ezek</label></div>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <h2>Mennyi ideig szoktál zuhanyozni általában?</h2>
+                        <div class="radioConatiner">
+                            <div><input id="viz3A" name="viz3" type="radio"><label for="viz3A">5 percnél kevesebb</label></div>
+                            <div><input id="viz3B" name="viz3" type="radio"><label for="viz3B">5–10 perc</label></div>
+                            <div><input id="viz3C" name="viz3" type="radio"><label for="viz3C">10–15 perc</label></div>
+                            <div><input id="viz3D" name="viz3" type="radio"><label for="viz3D">15 percnél több</label></div>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <h2>Hogyan szoktál vizet inni napközben?</h2>
+                        <div class="radioConatiner">
+                            <div><input id="viz4A" name="viz4" type="radio"><label for="viz4A">Csapvíz</label></div>
+                            <div><input id="viz4B" name="viz4" type="radio"><label for="viz4B">Palackozott víz</label></div>
+                            <div><input id="viz4C" name="viz4" type="radio"><label for="viz4C">Szűrt víz</label></div>
+                            <div><input id="viz4D" name="viz4" type="radio"><label for="viz4D">Egyéb</label></div>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <h2>Tudod, hogy napi szinten mennyi vizet fogyasztasz?</h2>
+                        <div class="radioConatiner">
+                            <div><input id="viz5I" name="viz5" type="radio"><label for="viz5I">Igen, nagyjából</label></div>
+                            <div><input id="viz5NR" name="viz5" type="radio"><label for="viz5NR">Nem igazán</label></div>
+                            <div><input id="viz5N" name="viz5" type="radio"><label for="viz5N">Egyáltalán nem</label></div>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <h2>Zárod a csapot fogmosás vagy szappanozás közben?</h2>
+                        <div class="radioConatiner">
+                            <div><input id="viz6A" name="viz6" type="radio"><label for="viz6A">Igen, mindig</label></div>
+                            <div><input id="viz6B" name="viz6" type="radio"><label for="viz6B">Néha</label></div>
+                            <div><input id="viz6C" name="viz6" type="radio"><label for="viz6C">Nem</label></div>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <h2>Szerinted mi a legfontosabb oka a víztakarékosságnak?</h2>
+                        <div class="radioConatiner">
+                            <div><textarea name="viz8" rows="4" cols="50" placeholder="Írd le a véleményed..."></textarea></div>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <h2>Részt vennél egy helyi vízhasználati oktatáson vagy kampányban?</h2>
+                        <div class="radioConatiner">
+                            <div><input id="viz9I" name="viz9" type="radio"><label for="viz9I">Igen</label></div>
+                            <div><input id="viz9N" name="viz9" type="radio"><label for="viz9N">Nem</label></div>
+                            <div><input id="viz9A" name="viz9" type="radio"><label for="viz9A">Attól függ, mikor és hol</label></div>
+                        </div>
+                    </div>
+                    
+                    <div class="question">
+                        <h2>Van olyan saját praktikád a vízmegtakarításra, amit szívesen megosztanál?</h2>
+                        <div class="radioConatiner">
+                            <div><textarea name="viz10" rows="4" cols="50" placeholder="Írd le a praktikád..."></textarea></div>
+                        </div> 
+                        
+                    </div>
                 </div>
-            </div>
+    
+                <div class="SubmitBtn">
+                    <button type="submit">Beküldés</button>
+                </div>
+            </form>
         </main>
     
         <footer class="section">
@@ -187,12 +184,11 @@
                 <div class="">
                     <div class="footer-button-container">
                         <div class="footer-icon-container">
-                            <a href=""><img src="img/icons/shopping-bag.svg" alt="logo"></a>
-                            <a href=""><img src="img/icons/instagram.svg" alt="instagram"></a>
-                            <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
-                            <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
+                            <a href="https://github.com/Buglya/Spring_Project"><img src="img/icons/github.svg" alt="logo"></a>
+                            <a href="https://guns.lol/aquavibe"><img src="img/icons/instagram.svg" alt="instagram"></a>
+                            <a href="https://guns.lol/aquavibe"><img src="img/icons/facebook.svg" alt="facebook"></a>
+                            <a href="https://guns.lol/aquavibe"><img src="img/icons/twitter.svg" alt="twitter"></a>
                         </div>
-                        <input type="button" value="Csatlakozom">
                     </div>
                 </div>
         
@@ -226,3 +222,7 @@
         body.classList.toggle("active");
     }
 </script>
+
+<!--
+TODO: Felugro ablak, telefonra igazítás
+-->

@@ -7,31 +7,52 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <div class="off-screen-menu">
+        <div class="off-screen-buttons">
+            <div class="logoCon">
+                <h1>AquaVibe</h1>
+                <img class="logo" src="img/icons/logo.png" alt="">
+            </div>
+        </div>
+    
+        <div class="off-screen-container">
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a onclick="closeSideBar()" href="#termekek">Márkáink</a></li>
+                <li><a href="">Média</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="off-screen-overlay" onclick="closeSideBar()"></div>
+    
     <nav class="section">
         <div class="navbarcontainer">
-            <div>
-                <div class="headerContainer">
-                    <div>
-                        <a href="index.html"><img src="img/icons/ChatGPT Image 2025. ápr. 21. 20_20_08.png" class="logo" alt="LOGO"></a>
-                    </div>
-                    <div>
-                        <a href="index.html"><h1>AquaVibe</h1></a>
-                    </div>
+            <nav class="nav-ham-menu">
+                <div class="ham-menu hidden">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+            </nav>
+            <div class="headerContainer">
+                <a href="index.html">AquaVibe</a>
             </div>
             <div class="navbarelemek">
                 <ul>
                     <li><a href=""></a></li>
-                    <li><a href="">Kinek ajánljuk</a></li>
-                    <li><a href="">Oktatóink</a></li>
-                    <li><a href="quiz.html">Quiz</a></li>
-                    <li><a id="login" href="">Login</a></li>
+                    <li><a href="about.html">Rólunk</a></li>
+                    <li><a href="#termekek">Márkáink</a></li>
+                    <li><a href="">Média</a></li>
+                    <li><a href=""></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <main>
+        <!-- IDE AZ OLDAL TÉMÁJA-->
     </main>
 
     <footer class="section">
@@ -69,12 +90,11 @@
             <div class="">
                 <div class="footer-button-container">
                     <div class="footer-icon-container">
-                        <a href=""><img src="img/icons/shopping-bag.svg" alt="logo"></a>
-                        <a href=""><img src="img/icons/instagram.svg" alt="instagram"></a>
-                        <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
-                        <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
+                        <a href="https://github.com/Buglya/Spring_Project"><img src="img/icons/github.svg" alt="logo"></a>
+                        <a href="https://guns.lol/aquavibe"><img src="img/icons/instagram.svg" alt="instagram"></a>
+                        <a href="https://guns.lol/aquavibe"><img src="img/icons/facebook.svg" alt="facebook"></a>
+                        <a href="https://guns.lol/aquavibe"><img src="img/icons/twitter.svg" alt="twitter"></a>
                     </div>
-                    <input type="button" value="Csatlakozom">
                 </div>
             </div>
     

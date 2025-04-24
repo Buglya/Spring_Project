@@ -8,170 +8,168 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-
-
-
-
-    <nav class="section">
-        <div class="navbarcontainer">
-            <div>
-                <div class="headerContainer">
-                    <div>
-                        <a href="index.html"> <img src="img/icons/ChatGPT Image 2025. ápr. 21. 20_20_08.png" class="logo" alt="LOGO"> </a>
-                    </div>
-                    <div>
-                        <a href="index.html"><h1>AquaVibe</h1></a>
-                    </div>
+    <div id="body">
+        <div class="off-screen-menu">
+            <div class="off-screen-buttons">
+                <div class="logoCon">
+                    <h1>AquaVibe</h1>
+                    <img class="logo" src="img/icons/logo.png" alt="">
                 </div>
             </div>
-            <div class="navbarelemek">
+    
+            <div class="off-screen-container">
                 <ul>
-                    <li><a href="">A kurzusról</a></li>
-                    <li><a href="">Kinek ajánljuk</a></li>
-                    <li><a href="">Oktatóink</a></li>
-                    <li><a href="">Képzések</a></li>
-                    <li><a id="login" href="">Login</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href="about.html">Rólunk</a></li>
+                    <li><a onclick="closeSideBar()" href="#termekek">Márkáink</a></li>
+                    <li><a href="">Média</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="headerdiv">
-       
     
-    <h1>Gyakran Ismételt Kérdések</h1>
-    <div class="faq">
-        <div class="question" onclick="toggleAnswer(this)">Miért hasznos a GYIK szekció?</div>
-        <div class="answer">A GYIK szekció segít gyorsan megválaszolni a látogatók gyakran feltett kérdéseit.</div>
-    </div>
-    <div class="faq">
-        <div class="question" onclick="toggleAnswer(this)">1. Miért érdemes befektetni az anyagi függetlenséghez kapcsolódó kurzusokba?</div>
-        <div class="answer">Az anyagi függetlenség eléréséhez szükséges készségek és tudás birtokában lehetőséged nyílik arra, hogy önállóan irányítsd a pénzügyi jövődet. Kurzusaink segítenek abban, hogy magabiztosan kezelhesd befektetéseidet, megtanulhass vállalkozást indítani, és elkerüld a pénzügyi csapdákat.x</div>
-    </div>
-    <div class="faq">
-        <div class="question" onclick="toggleAnswer(this)">2. Kinek szólnak ezek a kurzusok?</div>
-        <div class="answer">A kurzusaink bárkinek szólnak, aki szeretné megtanulni, hogyan érhet el anyagi függetlenséget, legyen szó diákokról, kezdő vállalkozókról, vagy akár tapasztalt szakemberekről.</div>
-    </div>
-    <div class="faq">
-        <div class="question" onclick="toggleAnswer(this)">3. Milyen témákat érintenek a kurzusok?</div>
-        <div class="answer">A kurzusok kiterjednek többek között a pénzügyi tervezésre, befektetési stratégiákra, passzív jövedelem kialakítására, vállalkozásindításra, és költségvetés-készítésre.</div>
-    </div>
-    <div class="faq">
-        <div class="question" onclick="toggleAnswer(this)">4. Milyen formában zajlanak a kurzusok?</div>
-        <div class="answer">Kurzusaink online elérhetők, ami azt jelenti, hogy bármikor, bárhonnan hozzáférhetsz az anyagokhoz. Videóleckékkel, letölthető segédanyagokkal és interaktív feladatokkal segítjük a tanulást.</div>
-    </div>
-    <div class="faq">
-        <div class="question" onclick="toggleAnswer(this)">5. Mennyi időt vesz igénybe egy kurzus elvégzése?</div>
-        <div class="answer">A kurzusok időtartama változó, de általában 2-8 hétig tartanak, rugalmas ütemezéssel, hogy könnyen beilleszthesd a napi teendőid közé.</div>
-    </div>
-    <div class="faq">
-        <div class="question" onclick="toggleAnswer(this)">6. Hogyan jelentkezhetek a kurzusokra?</div>
-        <div class="answer">A jelentkezés nagyon egyszerű! Keresd meg a kiválasztott kurzust a weboldalon, kattints a „Jelentkezés” gombra, töltsd ki a szükséges adatokat, és máris megkezdheted a tanulást.</div>
-    </div>
-    <div class="faq">
-        <div class="question" onclick="toggleAnswer(this)"> 7. Kihez fordulhatok további kérdésekkel?</div>
-        <div class="answer">További kérdések esetén lépjen kapcsolatba ügyfélszolgálatunkkal az elérhetőségeinken keresztül.</div>
-    </div>
-
-
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-        <script>
-            function toggleAnswer(questionElement) {
-                const answer = questionElement.nextElementSibling;
-                if (answer.style.display === "block") {
-                    answer.style.display = "none";
-                } else {
-                    answer.style.display = "block";
-                }
-            }
-        </script>
+        <div class="off-screen-overlay" onclick="closeSideBar()"></div>
     
-
-    
-    
-    
-    
-
-
-    <footer class="section">
-        <div class="main-footer-section">
-            <div class="footer-list-container">
-                <div class="footer-list">
-                    <h3>Cmpany</h3>
-                    <ul>
-                        <li><a href="gyik.html">GYIK</a></li>
-                        <li><a href="">ipsum</a></li>
-                        <li><a href="">ipsum</a></li>
-                        <li><a href="">ipsum</a></li>
-                        <li><a href="">ipsum</a></li>
-                    </ul>
-                </div>
-                <div class="footer-list">
-                    <h3>lorem</h3>
-                    <ul>
-                        <li><a href="">ipsum</a></li>
-                        <li><a href="">ipsum</a></li>
-                        <li><a href="">ipsum</a></li>
-                    </ul>
-                </div>
-                <div class="footer-list">
-                    <h3>lorem</h3>
-                    <ul>
-                        <li><a href="">ipsum</a></li>
-                        <li><a href="">ipsum</a></li>
-                        <li><a href="">ipsum</a></li>
-                        <li><a href="">ipsum</a></li>
-                    </ul>
-                </div>
-            </div>
-    
-            <div class="">
-                <div class="footer-button-container">
-                    <div class="footer-icon-container">
-                        <a href=""><img src="img/icons/shopping-bag.svg" alt="logo"></a>
-                        <a href=""><img src="img/icons/instagram.svg" alt="instagram"></a>
-                        <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
-                        <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
+        <nav class="section">
+            <div class="navbarcontainer">
+                <nav class="nav-ham-menu">
+                    <div class="ham-menu hidden">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <input type="button" value="Csatlakozom">
+                </nav>
+                <div class="headerContainer">
+                    <a href="index.html">AquaVibe</a>
+                </div>
+                <div class="navbarelemek">
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href="about.html">Rólunk</a></li>
+                        <li><a href="#termekek">Márkáink</a></li>
+                        <li><a href="">Média</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
     
-            <div class="footer-section">
-                <div class="footer-links-container">
-                    <a href="">Suppliers</a>
-                    <a href="">Terms and Conditions</a>
-                    <a href="">Privacy</a>
-                    <a href="">Cookies</a>
-                    <a href="">Security</a>
-                    <span>&COPY; 2025 *Brand name* | All rigths reserved.</span>
-                </div>
+        <div class="headerdiv">
+            <h1>Gyakran Ismételt Kérdések</h1>
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer(this)">Miért hasznos a GYIK szekció?</div>
+                <div class="answer">A GYIK szekció segít gyorsan megválaszolni a látogatók gyakran feltett kérdéseit.</div>
+            </div>
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer(this)">1. Miért érdemes befektetni az anyagi függetlenséghez kapcsolódó kurzusokba?</div>
+                <div class="answer">Az anyagi függetlenség eléréséhez szükséges készségek és tudás birtokában lehetőséged nyílik arra, hogy önállóan irányítsd a pénzügyi jövődet. Kurzusaink segítenek abban, hogy magabiztosan kezelhesd befektetéseidet, megtanulhass vállalkozást indítani, és elkerüld a pénzügyi csapdákat.x</div>
+            </div>
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer(this)">2. Kinek szólnak ezek a kurzusok?</div>
+                <div class="answer">A kurzusaink bárkinek szólnak, aki szeretné megtanulni, hogyan érhet el anyagi függetlenséget, legyen szó diákokról, kezdő vállalkozókról, vagy akár tapasztalt szakemberekről.</div>
+            </div>
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer(this)">3. Milyen témákat érintenek a kurzusok?</div>
+                <div class="answer">A kurzusok kiterjednek többek között a pénzügyi tervezésre, befektetési stratégiákra, passzív jövedelem kialakítására, vállalkozásindításra, és költségvetés-készítésre.</div>
+            </div>
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer(this)">4. Milyen formában zajlanak a kurzusok?</div>
+                <div class="answer">Kurzusaink online elérhetők, ami azt jelenti, hogy bármikor, bárhonnan hozzáférhetsz az anyagokhoz. Videóleckékkel, letölthető segédanyagokkal és interaktív feladatokkal segítjük a tanulást.</div>
+            </div>
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer(this)">5. Mennyi időt vesz igénybe egy kurzus elvégzése?</div>
+                <div class="answer">A kurzusok időtartama változó, de általában 2-8 hétig tartanak, rugalmas ütemezéssel, hogy könnyen beilleszthesd a napi teendőid közé.</div>
+            </div>
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer(this)">6. Hogyan jelentkezhetek a kurzusokra?</div>
+                <div class="answer">A jelentkezés nagyon egyszerű! Keresd meg a kiválasztott kurzust a weboldalon, kattints a „Jelentkezés” gombra, töltsd ki a szükséges adatokat, és máris megkezdheted a tanulást.</div>
+            </div>
+            <div class="faq">
+                <div class="question" onclick="toggleAnswer(this)"> 7. Kihez fordulhatok további kérdésekkel?</div>
+                <div class="answer">További kérdések esetén lépjen kapcsolatba ügyfélszolgálatunkkal az elérhetőségeinken keresztül.</div>
             </div>
         </div>
-    </footer>
+    
+        <footer class="section">
+            <div class="main-footer-section">
+                <div class="footer-logo"><h2>AquaVibe</h2></div>
+                <div class="footer-list-container">
+                    <div class="footer-list">
+                        <h3 class="bebas-neue-regular">Rólunk</h3>
+                        <ul>
+                            <li><a href="">Cégünk</a></li>
+                            <li><a href="">Történetünk</a></li>
+                            <li><a href="">Álláslehetőségek</a></li>
+                            <li><a href="">Média</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <h3 class="bebas-neue-regular">Segítség</h3>
+                        <ul>
+                            <li><a href="">Kapcsolat</a></li>
+                            <li><a href="gyik.html">GYIK</a></li>
+                            <li><a href="">Oldaltérkép</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <h3 class="bebas-neue-regular">Jogi információk</h3>
+                        <ul>
+                            <li><a href="">Felhasználási feltételek</a></li>
+                            <li><a href="">Adatvédelmi irányelvek</a></li>
+                            <li><a href="">Cookie szabályzat</a></li>
+                            <li><a href="">Cookie beállítások</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div class="">
+                    <div class="footer-button-container">
+                        <div class="footer-icon-container">
+                            <a href="https://github.com/Buglya/Spring_Project"><img src="img/icons/github.svg" alt="logo"></a>
+                            <a href="https://guns.lol/aquavibe"><img src="img/icons/instagram.svg" alt="instagram"></a>
+                            <a href="https://guns.lol/aquavibe"><img src="img/icons/facebook.svg" alt="facebook"></a>
+                            <a href="https://guns.lol/aquavibe"><img src="img/icons/twitter.svg" alt="twitter"></a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="footer-section">
+                    <div class="footer-links-container">
+                        <span>&COPY; 2025 AquaVibe | All rigths reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
+
+<script>
+    function toggleAnswer(questionElement) {
+        const answer = questionElement.nextElementSibling;
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    }
+</script>
+
+<script defer>
+    const hamMenu = document.querySelector(".ham-menu");
+
+    const offScreenMenu = document.querySelector(".off-screen-menu");
+    const html= document.querySelector("html")
+    const body = document.getElementById("body");
+
+
+    hamMenu.addEventListener("click", () => {
+        closeSideBar()
+    })
+
+    function closeSideBar(){
+        hamMenu.classList.toggle("active");
+        offScreenMenu.classList.toggle("active");
+        html.classList.toggle("active");
+        body.classList.toggle("active");
+    }
+</script>
