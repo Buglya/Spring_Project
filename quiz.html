@@ -64,7 +64,7 @@
                     <div class="question">
                         <div class="userInfo">
                             <input id="email" type="email" placeholder="E-mail cím" required>
-                            <div><input id="checkbox" type="checkbox" required><label for="checkbox">Az <a href="adatvedelmiiranyelvek.html">adatvédelmi irányelveket</a> elolvastam és elfogadom.</label></div>
+                            <div><input id="checkbox" type="checkbox" required><label for="checkbox">Az <a href="privacy-policy.html">adatvédelmi irányelveket</a> elolvastam és elfogadom.</label></div>
                         </div>
                     </div>
                     <div class="question">
@@ -225,14 +225,37 @@
     const card = document.querySelector(".card");
     const html = document.querySelector("html")
     const body = document.getElementById("body");
+    const checkbox = document.getElementById("checkbox");
+    const email = document.getElementById("email");
+    
 
     function thx(){
-        backgroundCover.classList.toggle("active");
-        thanksCard.classList.toggle("active");
-        card.classList.toggle("active");
-        html.classList.toggle("active");
-        body.classList.toggle("active");
+        function validalEmail() {
+        
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (emailRegex.test(email.value) && email.value !== "") {
+            if (checkbox.checked == true){
+                backgroundCover.classList.toggle("active");
+                thanksCard.classList.toggle("active");
+                card.classList.toggle("active");
+                html.classList.toggle("active");
+                body.classList.toggle("active");
+            }else{
+                checkbox.classList.toggle("wrong");
+            }
+        } else {
+            email.classList.toggle("wrong");
+        }
+
+        }
+
+        if (!checkbox.checked){
+            checkbox.classList.toggle("wrong");
+        }
+        validalEmail()
     }
+
 
     const hamMenu = document.querySelector(".ham-menu");
     const offScreenMenu = document.querySelector(".off-screen-menu");
