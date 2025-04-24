@@ -8,7 +8,7 @@ Ez a weboldal egy elképzelt pénzügyi tanácsadási kurzus bemutatására szol
 **Fontos:** az oldal nem tartalmaz működő kurzust, regisztrációs rendszert vagy fizetési lehetőséget – kizárólag egy statikus minta (mockup) céljából készült.
 
 ## 🌐 Itt elérhetd
-[https://buglya.github.io/Spring_Project/]
+https://buglya.github.io/Spring_Project/
 
 ## 🛠️ Használt technológiák
 
