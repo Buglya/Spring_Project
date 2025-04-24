@@ -7,7 +7,7 @@ Ez a projekt egy iskolai feladat részeként készült, amelynek célja a webfej
 Ez a weboldal egy elképzelt pénzügyi tanácsadási kurzus bemutatására szolgál. Az oldal struktúrája, dizájnja és tartalma azt illusztrálja, hogyan nézne ki egy ilyen szolgáltatás webes felülete.  
 **Fontos:** az oldal nem tartalmaz működő kurzust, regisztrációs rendszert vagy fizetési lehetőséget – kizárólag egy statikus minta (mockup) céljából készült.
 
-## 🌐 Itt elérhetd
+## 🌐 Itt elérheted
 https://buglya.github.io/Spring_Project/
 
 ## 🛠️ Használt technológiák
