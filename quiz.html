@@ -59,8 +59,14 @@
                 <h1>Víz tudatos használata</h1>
             </div>
     
-            <form action="/quiz.html" method="POST">
+            <form> <!--action="/quiz.html" method="POST"-->
                 <div class="questionContainer">
+                    <div class="question">
+                        <div class="userInfo">
+                            <input id="email" type="email" placeholder="E-mail cím" required>
+                            <div><input id="checkbox" type="checkbox" required><label for="checkbox">Az <a href="adatvedelmiiranyelvek.html">adatvédelmi irányelveket</a> elolvastam és elfogadom.</label></div>
+                        </div>
+                    </div>
                     <div class="question">
                         <h2>Milyen gyakran figyelsz oda arra, hogy ne pazarold a vizet otthon?</h2>
                         <div class="radioConatiner">
@@ -121,7 +127,7 @@
                     <div class="question">
                         <h2>Szerinted mi a legfontosabb oka a víztakarékosságnak?</h2>
                         <div class="radioConatiner">
-                            <div><textarea name="viz8" rows="4" cols="50" placeholder="Írd le a véleményed..."></textarea></div>
+                            <div class="textareaDiv"><textarea name="viz8" rows="4" cols="50" placeholder="Írd le a véleményed..."></textarea></div>
                         </div>
                     </div>
                     
@@ -137,17 +143,28 @@
                     <div class="question">
                         <h2>Van olyan saját praktikád a vízmegtakarításra, amit szívesen megosztanál?</h2>
                         <div class="radioConatiner">
-                            <div><textarea name="viz10" rows="4" cols="50" placeholder="Írd le a praktikád..."></textarea></div>
+                            <div class="textareaDiv"><textarea name="viz10" rows="4" cols="50" placeholder="Írd le a praktikád..."></textarea></div>
                         </div> 
                         
                     </div>
                 </div>
     
                 <div class="SubmitBtn">
-                    <button type="submit">Beküldés</button>
+                    <button type="button" onclick="thx()">Beküldés</button>
                 </div>
             </form>
         </main>
+
+        <div id="backgroundCover"></div>
+        <div id="thanksCard">
+            <div class="card">
+                <div>
+                    <h1>Köszönjük válaszát!</h1>
+                    <a href="index.html">Vissza a főoldalhoz</a>
+                </div>
+            </div>
+        </div>
+
     
         <footer class="section">
             <div class="main-footer-section">
@@ -174,7 +191,7 @@
                         <h3 class="bebas-neue-regular">Jogi információk</h3>
                         <ul>
                             <li><a href="">Felhasználási feltételek</a></li>
-                            <li><a href="">Adatvédelmi irányelvek</a></li>
+                            <li><a href="adatvedelmiiranyelvek.html">Adatvédelmi irányelvek</a></li>
                             <li><a href="">Cookie szabályzat</a></li>
                             <li><a href="">Cookie beállítások</a></li>
                         </ul>
@@ -203,12 +220,23 @@
 </body>
 </html>
 
-<script defer>
-    const hamMenu = document.querySelector(".ham-menu");
-
-    const offScreenMenu = document.querySelector(".off-screen-menu");
-    const html= document.querySelector("html")
+<script>
+    const backgroundCover = document.getElementById("backgroundCover");
+    const thanksCard = document.getElementById("thanksCard");
+    const card = document.querySelector(".card");
+    const html = document.querySelector("html")
     const body = document.getElementById("body");
+
+    function thx(){
+        backgroundCover.classList.toggle("active");
+        thanksCard.classList.toggle("active");
+        card.classList.toggle("active");
+        html.classList.toggle("active");
+        body.classList.toggle("active");
+    }
+
+    const hamMenu = document.querySelector(".ham-menu");
+    const offScreenMenu = document.querySelector(".off-screen-menu");
 
 
     hamMenu.addEventListener("click", () => {
@@ -222,6 +250,8 @@
         body.classList.toggle("active");
     }
 </script>
+
+
 
 <!--
 TODO: Felugro ablak, telefonra igazítás

@@ -565,6 +565,7 @@ main {
 .gridcard p{
     margin-bottom: 0;
     padding: 0 5px;
+    padding-bottom: 5px;
     text-align: center;
 }
 
@@ -574,6 +575,28 @@ main {
 
 .gridcard:nth-child(2n+2) {
     color: #fff;
+}
+
+.userInfo{
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-auto-rows: 1fr;
+}
+
+.userInfo input[type="email"]{
+    max-width: 500px;
+    height: 40px;
+    font-size: 1rem;
+}
+
+.userInfo label{
+    font-size: 1.2rem;
+}
+
+.userInfo a{
+    font-weight: 600;
+    font-family: Archivo-Light;
+    color: #0b8bcc;
 }
  
 @media (max-width: 1050px){

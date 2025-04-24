@@ -1,23 +1,5 @@
 @import url('fonts/Archivo_Complete/Fonts/WEB/css/archivo.css');
 
-:root {
-    --ff: Archivo-Regular;
-    --colorprimary: black;
-    --colorsecondary: white;
-    --coloraccent: #13a1c5;
-    --coloraccentshade: #7242d948;
-    --h1: bold 54px/64px var(--ff);
-    --h2: bold 36px/36px var(--ff);
-    --h3: bold 24px/30px var(--ff);
-    --links: bold 18px/18px var(--ff);
-    --p: 18px/30px var(--ff);
-    --subtext: 12px/20px var(--ff);
-    --smalltext: bold 20px/26px var(--ff);
-    --transition: 0.3s ease-in-out;
-    --shadow: #00000030 0px 0px 10px 0px;
-    --shadowdark: #00000030 0px 5px 10px
-}
-
 .header{
     display: flex;
     justify-content: center;
@@ -29,7 +11,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(10, 20vh);
+    grid-template-rows: repeat(9, 1fr);
     gap: 40px;
     counter-reset: section;
 }
@@ -38,6 +20,9 @@
     width: 100%;
     height: auto;
     cursor: default;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 
 .question h2::before{
@@ -47,7 +32,7 @@
 
 .radioConatiner{
     width: 100%;
-    height: auto;
+    height: fit-content;
     display: flex;
     gap: 30px;
 }
@@ -77,25 +62,103 @@
     max-width: 300px;
     margin-top: 40px;
     margin-bottom: 40px;
+    background-color: var(--coloraccent);
+    font-size: 2rem;
+    color: var(--colorsecondary);
+    border-radius: 5px;
+    border: 2px solid #000;
+    transition: var(--transition);
+}
 
+.SubmitBtn button:hover{
+    scale: 1.05;
+    transition: var(--transition);
 }
 main{
     height: auto;
 }
+
+textarea {
+    resize: none;
+}
+
+#backgroundCover{
+    position: fixed;
+    background-color: #15181c50;
+    inset: 0;
+    z-index: 10;
+    display: none;
+    transition: .3s ease;
+}
+
+#thanksCard{
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#thanksCard .card{
+    width: 80%;
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 100;
+    max-width: 500px;
+    border-radius: 5px;
+    left: -500px;
+    transition: .3s ease;
+}
+
+#thanksCard .card div{
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+#thanksCard .card div h1{
+    width: 100%;
+    text-align: center;
+}
+
+#thanksCard .card div a{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 1rem;
+    color: #13a1c5;
+}
+
+#thanksCard.active{
+    display: flex;
+    bottom: 0;
+}
+
+#backgroundCover.active{
+    display: block;
+    overflow-y: hidden; 
+}
+
+#thanksCard .card.active{
+    left: auto;
+}
+
 
 /*11.51*/
 
 @media (max-width: 1123px){
     .question{
         width: 100%;
-        height: fit-content;
-        padding: 0 6px;
-
+        height: 100%;
+        padding: 0 5%;
     }
     
     .radioConatiner{
         width: 100%;
-        height: 90%;
+        height: fit-content;
         display: grid;
         font-size: 1rem;
         gap: 0;
@@ -103,6 +166,10 @@ main{
 
     .radioConatiner textarea{
         width: 100%;
+    }
+
+    .textareaDiv{
+        width: 99%;
     }
 
     .questionContainer h2{
@@ -115,15 +182,20 @@ main{
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;       
-        grid-template-rows: repeat(9, 10%);             
+        grid-auto-rows: 1fr;             
         gap: 40px;
-        height: auto;
+        height: 100%;
         margin-bottom: 30%;
     }
 
     main{
         height: fit-content;
         margin-bottom: 0;
+        height: 118%;
+    }
+
+    form{
+        height: fit-content;
     }
     
 
