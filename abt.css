@@ -1,24 +1,37 @@
 .wordbox {
     display: flex;
     justify-content: center;
-
+    width: 100%;
 }
 
 .wordbox2 {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
 }
 
 main{
     margin: 0 15vw 0 15vw;
+    margin-top: 56px;
+}
+
+.kep img{
+}
+
+.kep2 img{
 }
 
 .kep {
-    width: 100%;
+    width: 50%;
     display: flex;
-    justify-content: center;
-    width: 60%;
+    justify-content: flex-start;
 }
+
+.kep2 {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;}
 
 .wordbox img {
     width: 380px;
@@ -31,10 +44,11 @@ main{
     box-shadow: 0px 10px 15px #d4d4d4;
     padding: 15px;
     z-index: 10;
-    width: 60%;
+    width: 40%;
 }
 
 .wordboxContainer {
+    width: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -56,7 +70,35 @@ p {
 
 td{
     border: 1px solid black;
-    text-align: center;
-    align-items: center;
-    display: flex;
+}
+
+@media (max-width: 1200px) {
+    .wordbox {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .szoveges {
+        width: 100%;
+    }
+
+    .kep {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .kep img{
+        width: 90%;
+    }
+
+    .kep2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .kep2 img{
+        width: 500px;
+    }
 }

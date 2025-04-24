@@ -3,15 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="abt.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="abt.css">
     <title>Rólunk</title>
 </head>
 <body>
+<div id="body">
+    <div class="off-screen-menu">
+        <div class="off-screen-buttons">
+            <div class="logoCon">
+                <h1>AquaVibe</h1>
+                <img class="logo" src="img/icons/logo.png" alt="">
+            </div>
+        </div>
+
+        <div class="off-screen-container">
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a onclick="closeSideBar()" href="#termekek">Márkáink</a></li>
+                <li><a href="">Média</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="off-screen-overlay" onclick="closeSideBar()"></div>
+
+    <nav class="section">
+        <div class="navbarcontainer">
+            <nav class="nav-ham-menu">
+                <div class="ham-menu hidden">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            <div class="headerContainer">
+                <a href="index.html">AquaVibe</a>
+            </div>
+            <div class="navbarelemek">
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href="about.html">Rólunk</a></li>
+                    <li><a href="#termekek">Márkáink</a></li>
+                    <li><a href="">Média</a></li>
+                    <li><a id="" href=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 <main>
     <h1>AquaVibe – A víz, ami mozgat</h1>
 <div class="wordboxContainer">
-    <div class="wordbox">
+    <div class="wordbox ">
         <div class="szoveges">
             <h2>Egy korty, ami elindította – 1999. július</h2>
             <p>1999 nyarán, egy forró júliusi délutánon Debrecen határában, Bánk mellett, egy kis forrásvíz mellett állt három testvér. Egyikük megkóstolta a vizet, és így szólt: „Ez több mint tiszta. Ez élet.” Ezen a napon született az ötlet, hogy gyárthatnak saját, tiszta, egészséges vizet. Még aznap este Balázs leírta a nevet egy régi naplólapra: AquaVibe. Mert ez nemcsak víz, ez életérzés, frissítő lendület, ami áthatja a testet és a lelket.</p>
@@ -72,7 +116,7 @@
             <h2>A hely ahol született</h2>
             <p>Az AquaVibe első palackozóműhelyét – egy régi téglaépületben, a Parasztelosztó mellett – hamar kinőtték, ahogy a kereslet Debrecen városán is túlnőtt. Az elkövetkező tíz év során a vállalkozás négyszer költözött, egyre nagyobb telephelyekre, hogy lépést tartson a növekvő igényekkel. A forrás vize minden évszakban keresetté vált: hűsítő korty nyáron, frissítő energia télen. Az AquaVibe gyorsan beépült a hétköznapokba, nemcsak mint víz, hanem mint szokás, mint élmény.</p>
         </div>
-        <div class="kep"><img src="img/icons/mechwart.jpg" alt="kep2"></div>
+        <div class="kep2"><img src="img/icons/mechwart.jpg" alt="kep2"></div>
     </div>
     <div class="wordbox">
         <div class="szoveges"><h2>A világ legtermészetesebb itala</h2>
@@ -89,5 +133,6 @@
     </div>
 </div>
 </main>
+</div>
 </body>
 </html>
