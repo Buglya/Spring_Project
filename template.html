@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEMPLATE</title>
+    <title>AquaVibe</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
+<style>
+    .flexConatiner{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 56px;
+    }
+
+    .flexConatiner h1, .flexConatiner p{
+        text-align: center;
+    }
+
+    .flexConatiner img{
+        width: 100%;
+        height: auto;
+        max-width: 1080px;
+    }
+
+    .flexConatiner a{
+        color: var(--coloraccent);
+    }
+
+    main{
+        margin-bottom: 0;
+    }
+</style>
+
 <body>
     <div class="off-screen-menu">
         <div class="off-screen-buttons">
@@ -20,7 +50,7 @@
                 <li><a href=""></a></li>
                 <li><a href="about.html">Rólunk</a></li>
                 <li><a onclick="closeSideBar()" href="#termekek">Márkáink</a></li>
-                <li><a href="">Média</a></li>
+                <li><a href="media.html">Média</a></li>
             </ul>
         </div>
     </div>
@@ -52,7 +82,14 @@
     </nav>
 
     <main>
-        <!-- IDE AZ OLDAL TÉMÁJA-->
+        <div class="flexConatiner">
+            <div>
+                <h1>Fejlesztés alatt</h1>
+                <p>Honlapunk még fejlesztés alatt áll, de már készen állunk! </p>
+                <p><a href="index.html">Vissza a főoldalhoz</a></p>
+                <img src="img/underConstruction.png" alt="építés_alatt">
+            </div>
+        </div>
     </main>
 
     <footer class="section">
@@ -77,10 +114,10 @@
                 <div class="footer-list">
                     <h3 class="bebas-neue-regular">Jogi információk</h3>
                     <ul>
-                        <li><a href="">Felhasználási feltételek</a></li>
+                        <li><a href="template.html">Felhasználási feltételek</a></li>
                         <li><a href="privacy-policy.html">Adatvédelmi irányelvek</a></li>
-                        <li><a href="">Cookie szabályzat</a></li>
-                        <li><a href="">Cookie beállítások</a></li>
+                        <li><a href="template.html">Cookie szabályzat</a></li>
+                        <li><a href="template.html">Cookie beállítások</a></li>
                     </ul>
                 </div>
             </div>

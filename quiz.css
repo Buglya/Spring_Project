@@ -1,11 +1,8 @@
-@import url('fonts/Archivo_Complete/Fonts/WEB/css/archivo.css');
-
 .header{
     display: flex;
     justify-content: center;
     text-align: center;
 }
-
 
 .questionContainer{
     width: 100%;
@@ -82,6 +79,28 @@ textarea {
     resize: none;
 }
 
+.userInfo{
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-auto-rows: 1fr;
+}
+
+.userInfo input[type="email"]{
+    max-width: 500px;
+    height: 40px;
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.userInfo label{
+    font-size: 1.2rem;
+}
+
+.userInfo a{
+    font-weight: 600;
+    font-family: Archivo-Light;
+    color: #0b8bcc;
+}
 
 .wrong{
     border: 3px solid red;
@@ -153,9 +172,6 @@ textarea {
     left: auto;
 }
 
-
-/*11.51*/
-
 @media (max-width: 1123px){
     .question{
         width: 100%;
@@ -204,8 +220,4 @@ textarea {
     form{
         height: fit-content;
     }
-    
-
-
-
 }
