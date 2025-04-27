@@ -15,6 +15,9 @@
 }
 
 .headerdiv{
-
     margin:0 10px 20vw 10px;
+}
+
+.headerdiv h1{
+    text-align: center;
 }

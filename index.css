@@ -192,6 +192,10 @@ html.active{
     justify-content: space-between;
 }
 
+.logoCon h1{
+    font-size: 3rem;
+}
+
 
 /* Header */
 
@@ -284,8 +288,8 @@ nav li {
     }
 
     .nav-ham-menu{
-        display: block;
-        justify-self: flex-end;
+        display: flex;
+        align-items: center;
     }
 
     .headerContainer{

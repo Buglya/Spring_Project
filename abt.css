@@ -16,11 +16,6 @@ main{
     margin-top: 56px;
 }
 
-.kep img{
-}
-
-.kep2 img{
-}
 
 .kep {
     width: 50%;
@@ -78,7 +73,8 @@ td{
 
 @media (max-width: 1200px) {
     main{
-        margin: 0;
+        margin-left: 8px;
+        margin-right: 8px;
     }
 
     .wordboxContainer{
@@ -93,7 +89,7 @@ td{
     }
 
     .szoveges {
-        width: 90%;
+        width: 95%;
     }
 
     .kep {
