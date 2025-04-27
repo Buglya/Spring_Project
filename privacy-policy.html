@@ -32,6 +32,20 @@
     main div{
         margin-bottom: 32px;
     }
+
+    @media (max-width: 609px){
+        main h1{
+            font-size: 2.3rem;
+        }
+
+        main h3, main h1{
+        text-align: center;
+        }
+
+        main p{
+            text-align: justify;
+        }
+    }
 </style>
 
 <body>
@@ -192,3 +206,23 @@
     </footer>
 </body>
 </html>
+
+<script>
+    const hamMenu = document.querySelector(".ham-menu");
+
+    const offScreenMenu = document.querySelector(".off-screen-menu");
+    const html= document.querySelector("html")
+    const body = document.getElementById("body");
+
+
+    hamMenu.addEventListener("click", () => {
+        closeSideBar()
+    })
+
+    function closeSideBar(){
+        hamMenu.classList.toggle("active");
+        offScreenMenu.classList.toggle("active");
+        html.classList.toggle("active");
+        body.classList.toggle("active");
+    }
+</script>
